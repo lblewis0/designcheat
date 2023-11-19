@@ -1,10 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import './app/shared/styles/colors.scss';
+
 html
 {
     height: 100%;
     width: 100%;
     padding: 0px;
     margin: 0px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    background-color: $dark-theme;
 }
 
 body
@@ -12,5 +18,5 @@ body
     height: 100%;
     width: 100%;
     padding: 0px;
-    margin: 0px; 
+    margin: 0px;
 }

@@ -1,0 +1,222 @@
+.c-main-div
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+}
+
+.v-ly
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pal
+{
+    font-size: 16px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 0.35em;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgba(white,0.95);
+    font-weight: 450;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pal-2
+{
+    font-size: 16px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 0.35em;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // color: #4b5563;
+    color: rgba(white,0.95);
+    font-weight: 450;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+// $dark-theme--00: #121212;
+// $dark-theme--00: rgb(34,45,61);
+$dark-theme--00: rgb(38,51,68);
+
+#pal-d-1
+{
+    background-color: $dark-theme--00;
+}
+
+#pal-d-2
+{
+    background-color: rgba($dark-theme--00, 0.90);
+}
+
+#pal-d-3
+{
+    background-color: rgba($dark-theme--00, 0.80);
+}
+
+#pal-d-4
+{
+    background-color: rgba($dark-theme--00, 0.70);
+}
+
+#pal-d-5
+{
+    background-color: rgba($dark-theme--00, 0.60);
+}
+
+#pal-d-6
+{
+    background-color: rgba($dark-theme--00, 0.50);
+}
+
+#pal-d-7
+{
+    background-color: rgba($dark-theme--00, 0.40);
+}
+
+#pal-d-8
+{
+    background-color: rgba($dark-theme--00, 0.30);
+}
+
+#pal-d-9
+{
+    background-color: rgba($dark-theme--00, 0.20);
+}
+
+#pal-d-10
+{
+    background-color: rgba($dark-theme--00, 0.10);
+}
+
+
+$primary-theme--00: #382bf0;
+
+#pal-p-1
+{
+    background-color: $primary-theme--00;
+}
+
+#pal-p-2
+{
+    background-color: rgba($primary-theme--00, 0.90);
+}
+
+#pal-p-3
+{
+    background-color: rgba($primary-theme--00, 0.80);
+}
+
+#pal-p-4
+{
+    background-color: rgba($primary-theme--00, 0.70);
+}
+
+#pal-p-5
+{
+    background-color: rgba($primary-theme--00, 0.60);
+}
+
+#pal-p-6
+{
+    background-color: rgba($primary-theme--00, 0.50);
+}
+
+#pal-p-7
+{
+    background-color: rgba($primary-theme--00, 0.40);
+}
+
+#pal-p-8
+{
+    background-color: rgba($primary-theme--00, 0.30);
+}
+
+#pal-p-9
+{
+    background-color: rgba($primary-theme--00, 0.20);
+}
+
+#pal-p-10
+{
+    background-color: rgba($primary-theme--00, 0.10);
+}
+
+$mixin-theme--00: #382bf0;
+$mixin-factor: 50%;
+
+#pal-m-1
+{
+    background-color: mix($dark-theme--00, $primary-theme--00, $mixin-factor);
+}
+
+#pal-m-2
+{
+    background-color: mix(rgba($dark-theme--00, 0.9), rgba($primary-theme--00, 0.9), $mixin-factor);
+}
+
+#pal-m-3
+{
+    background-color: mix(rgba($dark-theme--00, 0.8), rgba($primary-theme--00, 0.8), $mixin-factor);
+}
+
+#pal-m-4
+{
+    background-color: mix(rgba($dark-theme--00, 0.7), rgba($primary-theme--00, 0.7), $mixin-factor);
+}
+
+#pal-m-5
+{
+    background-color: mix(rgba($dark-theme--00, 0.6), rgba($primary-theme--00, 0.6), $mixin-factor);
+}
+
+#pal-m-6
+{
+    background-color: mix(rgba($dark-theme--00, 0.5), rgba($primary-theme--00, 0.5), $mixin-factor);
+}
+
+#pal-m-7
+{
+    background-color: mix(rgba($dark-theme--00, 0.4), rgba($primary-theme--00, 0.4), $mixin-factor);
+}
+
+#pal-m-8
+{
+    background-color: mix(rgba($dark-theme--00, 0.3), rgba($primary-theme--00, 0.3), $mixin-factor);
+}
+
+#pal-m-9
+{
+    background-color: mix(rgba($dark-theme--00, 0.2), rgba($primary-theme--00, 0.2), $mixin-factor);
+}
+
+#pal-m-10
+{
+    background-color: mix(rgba($dark-theme--00, 0.1), rgba($primary-theme--00, 0.1), $mixin-factor);
+}
+

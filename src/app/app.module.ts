@@ -6,20 +6,22 @@ import { HomeComponent } from './navigation/home/home.component';
 import { SidebarComponent } from './navigation/sidebar/sidebar.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { DesigncheatsModule } from './modules/designcheats/designcheats.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SidebarComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterOutlet,
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    DesigncheatsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

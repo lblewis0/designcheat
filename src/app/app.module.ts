@@ -7,21 +7,25 @@ import { SidebarComponent } from './navigation/sidebar/sidebar.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { DesigncheatsModule } from './modules/designcheats/designcheats.module';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SidebarComponent,
-    HeaderComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SharedModule,
     RouterOutlet,
     RouterLink,
     RouterLinkActive,
-    DesigncheatsModule
+    DesigncheatsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

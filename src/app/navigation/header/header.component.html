@@ -15,25 +15,11 @@
     </div>
     <div class="navbar-default">
         <div class="navbar-left-section">
-            <!-- <div *ngFor="let element in navbar.Buttons; let i=index"
-                 [ngClass]="{'navbar-navbutton-selected' : element.isSelected,
-                             'navbar-navbutton' : !element.isSelected}">
-                 <a class="navbar-navbutton-a">{{element.value}}</a>
-            </div> -->
-            @for (element of navbar.Buttons; track element.id) {
-                <div class="navbar-navbutton">
-                    <a class="navbar-navbutton-a">{{ element.value }}</a>
-                </div>
-            }
-            <!-- <div class="navbar-navbutton">
-                <a class="navbar-navbutton-a">Navigation</a>
+            <div *ngFor="let element of navbar.Buttons; let i=index"
+                 [ngClass]="element.isSelected === true ? 'navbar-navbutton-selected' : 'navbar-navbutton'"
+                 (click)="onClickNavButton(i)">
+                 <a class="navbar-navbutton-a" (click)="onClickNavButton(i)">{{element.value}}</a>
             </div>
-            <div class="navbar-navbutton">
-                <a class="navbar-navbutton-a">Home</a>
-            </div>
-            <div class="navbar-navbutton">
-                <a class="navbar-navbutton-a">Sidebar</a>
-            </div> -->
         </div>
         <div class="navbar-middle-section">
             <div class="navbar-searchinput">

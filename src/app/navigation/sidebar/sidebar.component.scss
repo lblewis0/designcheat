@@ -1,16 +1,5 @@
 @import "../../shared/styles/colors.scss";
 
-//Models----------------------------------------------------------------------------------------------------
-//VerticalNavigationBar-Div-----------------------------------------------------------------------------------
-$vnb-ul-child-indent: 20px;
-
-$vnb-li-height: 30px;
-$vnb-li-width: 100%;
-$vnb-li-h-padding: 0px;
-$vnb-li-v-padding: 0px;
-$vnb-li-h-margin: 0px;
-$vnb-li-v-margin: 0px;
-
 .c-main-div
 {
     display: flex;
@@ -38,7 +27,7 @@ $vnb-li-v-margin: 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 0.5rem;
+    gap: 0rem;
 }
 
 .sidebar-li-group
@@ -57,7 +46,7 @@ $vnb-li-v-margin: 0px;
     font-size: 0.875rem;
     line-height: 1.25rem;
     padding-left: 0.5rem;
-    padding-right: 0.75rem;
+    padding-right: 0.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-radius: 0.375rem;
@@ -70,6 +59,7 @@ $vnb-li-v-margin: 0px;
     background-color: transparent;
     color: $font-default-color;
     fill: $font-default-color;
+    border: 1px solid lightgray;
 }
 
 .sidebar-li-itemIcon:hover
@@ -101,7 +91,7 @@ $vnb-li-v-margin: 0px;
     align-items: center;
     margin-left: 0.5rem;
     background-color: transparent;
-    border: none;
+    border: 1px solid lightgray;
     color: $font-default-color;
 }
 
@@ -123,6 +113,12 @@ $vnb-li-v-margin: 0px;
     width: 1.2rem;
 }
 
+.sidebar-li-itemIcon-arrowlefticon
+{
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
 .sidebar-li-item-a
 {
     text-decoration: none;
@@ -137,7 +133,7 @@ $vnb-li-v-margin: 0px;
     width: calc(100% - 1rem);
     padding: 0rem;
     margin: 0rem;
-    padding-top: 0.5rem;
+    padding-top: 0rem;
     padding-left: 1rem;
 }
 
@@ -146,12 +142,12 @@ $vnb-li-v-margin: 0px;
     width: 100%;
     height: fit-content;
     list-style-type: none;
-    padding: 0px;
-    border: 0px;
+    padding: 0rem;
+    border: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 0.5rem;
+    gap: 0rem;
 }
 
 

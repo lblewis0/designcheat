@@ -120,6 +120,25 @@
     font-weight: 500;
 }
 
+.navbar-navbutton-selected
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    background-color: rgab(black, 0.5);
+    color: $font-active-color;
+    font-weight: 500;
+}
+
 .navbar-navbutton:hover
 {
     background-color: rgba(black, 0.3);
@@ -135,14 +154,7 @@
 .navbar-navbutton-a
 {
     text-decoration: none;
-    color: $font-default-color;
 }
-
-// .hovering:hover{
-//     color: inherit;
-//     lighten( )
-
-// }
 
 .navbar-navbutton-a:hover
 {

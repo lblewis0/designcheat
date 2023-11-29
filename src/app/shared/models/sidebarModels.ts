@@ -7,5 +7,7 @@ export interface liElement
 {
     value: string;
     isSelected: boolean;
-    childs? : liElement[];
+    isExpanded?: boolean;
+    iconPath?: string;
+    childs?: liElement[];
 }

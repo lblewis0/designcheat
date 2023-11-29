@@ -41,7 +41,7 @@
     justify-content: flex-start;
 }
 
-.sidebar-li-itemIcon
+.sidebar-li-item-logo-childs
 {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -50,7 +50,6 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-radius: 0.375rem;
-    padding-left: 5px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -59,24 +58,152 @@
     background-color: transparent;
     color: $font-default-color;
     fill: $font-default-color;
-    border: 1px solid lightgray;
+    // border: 1px solid lightgray;
 }
 
-.sidebar-li-itemIcon:hover
+.sidebar-li-item-logo-childs-selected
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(black, 0.5);
+    color: $font-active-color;
+    fill: $font-default-color;
+    // border: 1px solid lightgray;
+}
+
+.sidebar-li-item-logo-childs:hover
 {
     background-color: rgba(black, 0.3);
     fill: $font-hover-color;
     color: $font-hover-color;
 }
 
-.sidebar-li-itemIcon:active
+.sidebar-li-item-logo-childs:active
 {
     background-color: rgba(black, 0.5);
-    fill: $font-active-color;
-    color: $font-active-color;
+    fill: $font-hover-color;
+    color: $font-hover-color;
 }
 
-.sidebar-li-item
+.sidebar-li-item-wlogo-childs
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    color: $font-default-color;
+    fill: $font-default-color;
+    // border: 1px solid lightgray;
+}
+
+.sidebar-li-item-wlogo-childs-selected
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(black, 0.5);
+    color: $font-active-color;
+    fill: $font-default-color;
+    // border: 1px solid lightgray;
+}
+
+.sidebar-li-item-wlogo-childs:hover
+{
+    background-color: rgba(black, 0.3);
+    fill: $font-hover-color;
+    color: $font-hover-color;
+}
+
+.sidebar-li-item-wlogo-childs:active
+{
+    background-color: rgba(black, 0.5);
+    fill: $font-hover-color;
+    color: $font-hover-color;
+}
+
+.sidebar-li-item-logo-wchilds
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    color: $font-default-color;
+    fill: $font-default-color;
+    // border: 1px solid lightgray;
+}
+
+.sidebar-li-item-logo-wchilds-selected
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(black, 0.5);
+    color: $font-active-color;
+    fill: $font-default-color;
+    // border: 1px solid lightgray;
+}
+
+.sidebar-li-item-logo-wchilds:hover
+{
+    background-color: rgba(black, 0.3);
+    fill: $font-hover-color;
+    color: $font-hover-color;
+}
+
+.sidebar-li-item-logo-wchilds:active
+{
+    background-color: rgba(black, 0.5);
+    fill: $font-hover-color;
+    color: $font-hover-color;
+}
+
+.sidebar-li-item-wlogo-wchilds
 {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -89,31 +216,68 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 0.5rem;
+    gap: 0.5rem;
     background-color: transparent;
-    border: 1px solid lightgray;
     color: $font-default-color;
+    fill: $font-default-color;
+    // border: 1px solid lightgray;
 }
 
-.sidebar-li-item:hover
+.sidebar-li-item-wlogo-wchilds-selected
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(black, 0.5);
+    color: $font-active-color;
+    fill: $font-default-color;
+    // border: 1px solid lightgray;
+}
+
+.sidebar-li-item-wlogo-wchilds:hover
 {
     background-color: rgba(black, 0.3);
+    fill: $font-hover-color;
     color: $font-hover-color;
 }
 
-.sidebar-li-item:active
+.sidebar-li-item-wlogo-wchilds:active
 {
     background-color: rgba(black, 0.5);
+    fill: $font-hover-color;
+    color: $font-hover-color;
+}
+
+.sidebar-li-item-logo:hover
+{
+    background-color: rgba(black, 0.3);
+    fill: $font-hover-color;
+    color: $font-hover-color;
+}
+
+.sidebar-li-item-logo:active
+{
+    background-color: rgba(black, 0.5);
+    fill: $font-active-color;
     color: $font-active-color;
 }
 
-.sidebar-li-itemIcon-icon
+.sidebar-li-item-logo
 {
     height: 1.2rem;
     width: 1.2rem;
 }
 
-.sidebar-li-itemIcon-arrowlefticon
+.sidebar-li-item-expander
 {
     height: 1.2rem;
     width: 1.2rem;

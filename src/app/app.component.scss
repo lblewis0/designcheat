@@ -10,11 +10,13 @@
     align-items: center;
     gap: 0px;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .r-fh
 {
     height: fit-content;
+    flex-grow: 1;
     width: 100%;
 }
 
@@ -34,7 +36,7 @@
 
 .hlc
 {
-    height: 100%;
+    height: calc(100% - 3.5rem);
     width: 100%;
     background-color: $dark-theme-05;
     display: flex;
@@ -58,5 +60,5 @@
 {
     height: 100%;
     flex-grow: 1;
-    background-color: blue;
+    background-color: $dark-theme-10;
 }

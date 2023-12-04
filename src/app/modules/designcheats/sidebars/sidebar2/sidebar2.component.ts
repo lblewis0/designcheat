@@ -1,56 +1,49 @@
 import { Component } from '@angular/core';
-import { navbarModel } from 'src/app/shared/models/navbarModels';
 import { liElement, sidebarUlModel } from 'src/app/shared/models/sidebarModels';
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss']
+  selector: 'app-sidebar2',
+  templateUrl: './sidebar2.component.html',
+  styleUrls: ['./sidebar2.component.scss']
 })
-export class SidebarComponent {
+export class Sidebar2Component {
 
-  sidebar: sidebarUlModel = {
+  sidebarUl: sidebarUlModel = {
     Buttons: [
-      {value: 'Navigation', 
+      {value: 'Navigation',
        isSelected: false,
        isExpanding: false,
        isContracting: false,
        isExpanded: false, 
        childs: [
         {value: 'Navbars',
-         route: '/navbars', 
          isSelected: false,
          isExpanding: false,
          isContracting: false,
          isExpanded: false,
          childs: [
             {value: 'Navbar 1',
-             route: '/navbars',
              isSelected: false,
              isExpanding: false,
              isContracting: false,
              isExpanded: false,},
             {value: 'Navbar 2',
-             route: '/navbars',
              isSelected: false,
              isExpanding: false,
              isContracting: false,
              isExpanded: false},
             {value: 'Navbar items',
-             route: '/navbars',
              isSelected: false,
              isExpanding: false,
              isContracting: false,
              isExpanded: false}
          ]},
         {value: 'Sidebars',
-         route: '/sidebars', 
          isSelected: false,
          isExpanding: false,
          isContracting: false,
          childs: [
-            {value: 'Sidebar 1',
-             route: '/sidebars', 
+            {value: 'Sidebar 1', 
              isSelected: false,
              isExpanding: false,
              isContracting: false}
@@ -74,17 +67,17 @@ export class SidebarComponent {
   {
       //Ensuite je regarde à tous les autres li présent dans la sidebar
       //Et je change leur valeur en false
-      if(this.sidebar.Buttons && this.sidebar.Buttons.length > 0)
+      if(this.sidebarUl.Buttons && this.sidebarUl.Buttons.length > 0)
       {
-         for(let i = 0; i < this.sidebar.Buttons.length;i++)
+         for(let i = 0; i < this.sidebarUl.Buttons.length;i++)
          {
-            console.log(this.sidebar.Buttons[i].value);
+            console.log(this.sidebarUl.Buttons[i].value);
             
-            this.sidebar.Buttons[i].isSelected = false;
+            this.sidebarUl.Buttons[i].isSelected = false;
           
-            if(this.sidebar.Buttons[i].childs)
+            if(this.sidebarUl.Buttons[i].childs)
             {
-               this.unSelect(this.sidebar.Buttons[i]);
+               this.unSelect(this.sidebarUl.Buttons[i]);
             }
          }
       }
@@ -111,7 +104,7 @@ export class SidebarComponent {
         }, 1000)
       }
 
-      console.log(this.sidebar);
+      console.log(this.sidebarUl);
       
   }
     

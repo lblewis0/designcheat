@@ -1,6 +1,6 @@
 <div class="c-main-div">
     <ul class="sidebar-main-ul">
-        <ng-container *ngFor="let button of sidebar.Buttons; let i=index" 
+        <ng-container *ngFor="let button of sidebarUl.Buttons; let i=index" 
         [ngTemplateOutlet]="buttonTemplate"
         [ngTemplateOutletContext]="{ $implicit: button}"></ng-container>
     </ul>
@@ -74,3 +74,5 @@
         </div>           
     </li>
 </ng-template>
+
+

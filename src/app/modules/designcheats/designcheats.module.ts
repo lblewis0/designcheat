@@ -2,16 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DesigncheatsRoutingModule } from './designcheats-routing.module';
-import { NavbarsComponent } from './navbars/navbars.component';
+import { NavbarsModule } from './navbars/navbars.module';
+import { SidebarsModule } from './sidebars/sidebars.module';
 
 
 @NgModule({
   declarations: [
-    NavbarsComponent
   ],
   imports: [
     CommonModule,
-    DesigncheatsRoutingModule
+    DesigncheatsRoutingModule,
+    NavbarsModule,
+    SidebarsModule
   ]
 })
 export class DesigncheatsModule { }

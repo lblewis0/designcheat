@@ -1,9 +1,3 @@
-$mixing-factor: 50%;
-$dark-theme-surface: #121212;
-$primary-theme: #382bf0;
-$dark-theme: rgb(23, 31, 41);
-$dmixing-theme: mix($dark-theme-surface, $primary-theme, $mixing-factor);
-
 $dark-theme-d00: rgb(23, 31, 41);
 $dark-theme-l03: lighten($dark-theme-d00, 3%);
 $dark-theme-l06: lighten($dark-theme-d00, 6%);
@@ -22,102 +16,9 @@ $dark-theme-l42: lighten($dark-theme-d00, 42%);
 $dark-theme-l45: lighten($dark-theme-d00, 45%);
 $dark-theme-l48: lighten($dark-theme-d00, 48%);
 
-$dark-theme-00: rgba(white, 0.03);
-$dark-theme-01: rgba(white, 0.06);
-$dark-theme-02: rgba(white, 0.09);
-$dark-theme-03: rgba(white, 0.12);
-$dark-theme-04: rgba(white, 0.15);
-$dark-theme-05: rgba(white, 0.18);
-$dark-theme-06: rgba(white, 0.21);
-$dark-theme-07: rgba(white, 0.24);
-$dark-theme-08: rgba(white, 0.27);
-$dark-theme-09: rgba(white, 0.30);
-$dark-theme-10: rgba(white, 0.33);
-$dark-theme-11: rgba(white, 0.36);
-$dark-theme-12: rgba(white, 0.39);
-$dark-theme-13: rgba(white, 0.42);
-$dark-theme-14: rgba(white, 0.45);
-$dark-theme-15: rgba(white, 0.48);
-$dark-theme-16: rgba(white, 0.51);
-$dark-theme-17: rgba(white, 0.54);
-$dark-theme-18: rgba(white, 0.57);
-$dark-theme-19: rgba(white, 0.6);
-
-$dark-theme-hover-light: rgba(white, 0.1);
-$dark-theme-active-light: rgba(white, 0.2);
-$dark-theme-hover-dark: rgba(black, 0.1);
-$dark-theme-active-dark: rgba(black, 0.2);
-
 $font-default-color: rgba(white, 0.8);
 $font-hover-color: rgba(white, 0.9);
 $font-active-color: rgba(white, 1);
 
-
-$primary-theme: #382bf0;
-$primary-theme-00: rgba($primary-theme, 1);
-$primary-theme-01: rgba($primary-theme, 0.9);
-$primary-theme-02: rgba($primary-theme, 0.8);
-$primary-theme-03: rgba($primary-theme, 0.7);
-$primary-theme-04: rgba($primary-theme, 0.6);
-$primary-theme-05: rgba($primary-theme, 0.5);
-$primary-theme-06: rgba($primary-theme, 0.4);
-$primary-theme-07: rgba($primary-theme, 0.3);
-$primary-theme-08: rgba($primary-theme, 0.2);
-$primary-theme-09: rgba($primary-theme, 0.1);
-$primary-theme-10: rgba($primary-theme, 0);
-
-$mixin-theme: mix($dark-theme, $primary-theme, $mixing-factor);
-$mixin-theme-00: rgba($mixin-theme, 1);
-$mixin-theme-01: rgba($mixin-theme, 0.9);
-$mixin-theme-02: rgba($mixin-theme, 0.8);
-$mixin-theme-03: rgba($mixin-theme, 0.7);
-$mixin-theme-04: rgba($mixin-theme, 0.6);
-$mixin-theme-05: rgba($mixin-theme, 0.5);
-$mixin-theme-06: rgba($mixin-theme, 0.4);
-$mixin-theme-07: rgba($mixin-theme, 0.3);
-$mixin-theme-08: rgba($mixin-theme, 0.2);
-$mixin-theme-09: rgba($mixin-theme, 0.1);
-$mixin-theme-10: rgba($mixin-theme, 0);
-
-$font-color: white;
-$font-color-00: rgba($font-color, 1);
-$font-color-01: rgba($font-color, 0.9);
-$font-color-02: rgba($font-color, 0.8);
-$font-color-03: rgba($font-color, 0.7);
-$font-color-04: rgba($font-color, 0.6);
-$font-color-05: rgba($font-color, 0.5);
-$font-color-06: rgba($font-color, 0.4);
-$font-color-07: rgba($font-color, 0.3);
-$font-color-08: rgba($font-color, 0.2);
-$font-color-09: rgba($font-color, 0.1);
-$font-color-10: rgba($font-color, 0);
-
 $font-fam: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-$primary-color: #bb86fc;
-$primary-00dp: rgba($primary-color, 0); //Meme couleur que dark-theme-surface
-$primary-01dp: rgba($primary-color, 0.08);//De plus en plus clair
-$primary-fdp: rgba($primary-color, 1);
-
-$primary-red: #FF5252;
-$primary-red-00: rgba($primary-red, 0.5);
-
-$primary-oranged: #FF6A4D;
-$primary-orange: #FC8959;
-$primary-light-orange: #FFAF3B;
-
-$primary-green: #48CC90;
-$primary-green-00: rgba($primary-green, 0.5);
-
-$primary-blue-green: #5AB8BF;
-
-$primary-blue: #70A3E0;
-$primary-bue-00: rgba($primary-blue, 0.5);
-
-$primary-purple: #8981DD;
-
-$error-color: #cf6679;
-
-$light-font-color-high-emphasis: rgba(white, 0.87);
-$light-font-color-medium-emphasis: rgba(white, 0.60);
-$light-font-color-disabled-emphasis: rgba(white, 0.38);

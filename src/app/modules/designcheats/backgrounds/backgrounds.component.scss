@@ -7,7 +7,7 @@ $background-color: $dark-theme-d00;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    background-color: $dark-theme;
+    background-color: $background-color;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +43,7 @@ $background-color: $dark-theme-d00;
 
 label
 {
-    color: $light-font-color-high-emphasis;
+    color: $font-default-color;
     font-size: 1.2rem;
 }
 
@@ -67,24 +67,6 @@ label
     color: $font-default-color;
 }
 
-$dark-theme-t00: rgb(21, 31, 41);
-$dark-theme-t01: lighten($dark-theme-t00, 3%);
-$dark-theme-t02: lighten($dark-theme-t00, 6%);
-$dark-theme-t03: lighten($dark-theme-t00, 9%);
-$dark-theme-t04: lighten($dark-theme-t00, 12%);
-$dark-theme-t05: lighten($dark-theme-t00, 15%);
-$dark-theme-t06: lighten($dark-theme-t00, 18%);
-$dark-theme-t07: lighten($dark-theme-t00, 21%);
-$dark-theme-t08: lighten($dark-theme-t00, 24%);
-$dark-theme-t09: lighten($dark-theme-t00, 27%);
-$dark-theme-t10: lighten($dark-theme-t00, 30%);
-$dark-theme-t11: lighten($dark-theme-t00, 33%);
-$dark-theme-t12: lighten($dark-theme-t00, 36%);
-$dark-theme-t13: lighten($dark-theme-t00, 39%);
-$dark-theme-t14: lighten($dark-theme-t00, 42%);
-$dark-theme-t15: lighten($dark-theme-t00, 45%);
-$dark-theme-t16: lighten($dark-theme-t00, 48%);
-
 .gradients-div
 {
     display: flex;
@@ -95,8 +77,6 @@ $dark-theme-t16: lighten($dark-theme-t00, 48%);
     gap: 0.5rem;
 }
 
-$background-color: $dark-theme-d00;
-
 .bg0
 {
     display: flex;
@@ -106,7 +86,7 @@ $background-color: $dark-theme-d00;
     padding: 0.5rem;
     gap: 1rem;
     border-radius: 1rem;
-    background-color: $dark-theme-d00;
+    background-color: $background-color;
 }
 
 .bg1
@@ -118,7 +98,7 @@ $background-color: $dark-theme-d00;
     padding: 1rem;
     gap: 1rem;
     border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 3%);
+    background-color: lighten($background-color, 3%);
     height: 5rem;
     width: 5rem;
 }
@@ -132,7 +112,7 @@ $background-color: $dark-theme-d00;
     padding: 1rem;
     gap: 1rem;
     border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 6%);
+    background-color: lighten($background-color, 6%);
     height: 5rem;
     width: 5rem;
 }
@@ -146,7 +126,7 @@ $background-color: $dark-theme-d00;
     padding: 1rem;
     gap: 1rem;
     border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 9%);
+    background-color: lighten($background-color, 9%);
     height: 5rem;
     width: 5rem;
 }
@@ -160,7 +140,7 @@ $background-color: $dark-theme-d00;
     padding: 1rem;
     gap: 1rem;
     border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 12%);
+    background-color: lighten($background-color, 12%);
     height: 5rem;
     width: 5rem;
 }
@@ -174,7 +154,7 @@ $background-color: $dark-theme-d00;
     padding: 1rem;
     gap: 1rem;
     border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 15%);
+    background-color: lighten($background-color, 15%);
     height: 5rem;
     width: 5rem;
 }
@@ -188,7 +168,7 @@ $background-color: $dark-theme-d00;
     padding: 1rem;
     gap: 1rem;
     border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 18%);
+    background-color: lighten($background-color, 18%);
     height: 5rem;
     width: 5rem;
 }
@@ -202,7 +182,7 @@ $background-color: $dark-theme-d00;
     padding: 1rem;
     gap: 1rem;
     border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 21%);
+    background-color: lighten($background-color, 21%);
     height: 5rem;
     width: 5rem;
 }
@@ -216,7 +196,7 @@ $background-color: $dark-theme-d00;
     padding: 1rem;
     gap: 1rem;
     border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 24%);
+    background-color: lighten($background-color, 24%);
     height: 5rem;
     width: 5rem;
 }
@@ -230,105 +210,7 @@ $background-color: $dark-theme-d00;
     padding: 1rem;
     gap: 1rem;
     border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 27%);
-    height: 5rem;
-    width: 5rem;
-}
-
-.bg10
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    gap: 1rem;
-    border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 30%);
-    height: 5rem;
-    width: 5rem;
-}
-
-.bg11
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1rem;
-    gap: 1rem;
-    border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 33%);
-    height: 5rem;
-    width: 5rem;
-}
-
-.bg12
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1rem;
-    gap: 1rem;
-    border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 36%);
-    height: 5rem;
-    width: 5rem;
-}
-
-.bg13
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1rem;
-    gap: 1rem;
-    border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 39%);
-    height: 5rem;
-    width: 5rem;
-}
-
-.bg14
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1rem;
-    gap: 1rem;
-    border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 42%);
-    height: 5rem;
-    width: 5rem;
-}
-
-.bg15
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1rem;
-    gap: 1rem;
-    border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 45%);
-    height: 5rem;
-    width: 5rem;
-}
-
-.bg16
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1rem;
-    gap: 1rem;
-    border-radius: 1rem;
-    background-color: lighten($dark-theme-d00, 48%);
+    background-color: lighten($background-color, 27%);
     height: 5rem;
     width: 5rem;
 }

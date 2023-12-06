@@ -36,7 +36,7 @@ $background-color-16: $dark-theme-l45;
 {
     width: 80%;
     height: fit-content;
-    border: 1px solid $font-default-color;
+    border: 1px solid $dark-theme-l12;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -66,7 +66,7 @@ label
 {
     width: 100%;
     height: fit-content;
-    border: 1px solid lightgray;
+    border: 1px solid $dark-theme-l12;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -78,7 +78,7 @@ label
 
 .app-button
 {
-    width: 90%;
+    width: 100%;
 }
 
 

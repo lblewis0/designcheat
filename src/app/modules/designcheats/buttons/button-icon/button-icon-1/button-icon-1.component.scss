@@ -58,38 +58,49 @@ $background-color: $dark-theme-d00;
 {
     font-size: 0.875rem;
     line-height: 1.25rem;
-    padding-left: 0.75rem;
+    padding-left: 0.5rem;
     padding-right: 0.75rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-radius: 0.375rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    gap: 0.5rem; 
     cursor:pointer;
     color: $font-default-color;
+    fill: $font-default-color;
     font-weight: 500;
     appearance: none;
     border: none;
     background-color: lighten($background-color, 9%);
 }
 
+.button-icon
+{
+    box-sizing: border-box;
+    height: 1.1rem;
+    width: 1.1rem;
+}
+
 .button-hover
 {
     font-size: 0.875rem;
     line-height: 1.25rem;
-    padding-left: 0.75rem;
+    padding-left: 0.5rem;
     padding-right: 0.75rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-radius: 0.375rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
     align-items: center;
     cursor:pointer;
     color: $font-hover-color;
+    fill: $font-hover-color;
     font-weight: 500;
     appearance: none;
     border: none;
@@ -100,17 +111,19 @@ $background-color: $dark-theme-d00;
 {
     font-size: 0.875rem;
     line-height: 1.25rem;
-    padding-left: 0.75rem;
+    padding-left: 0.5rem;
     padding-right: 0.75rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-radius: 0.375rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
     align-items: center;
     cursor:pointer;
     color: $font-active-color;
+    fill: $font-active-color;
     font-weight: 500;
     appearance: none;
     border: none;
@@ -121,17 +134,19 @@ $background-color: $dark-theme-d00;
 {
     font-size: 0.875rem;
     line-height: 1.25rem;
-    padding-left: 0.75rem;
+    padding-left: 0.5rem;
     padding-right: 0.75rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-radius: 0.375rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
     align-items: center;
     cursor:pointer;
     color: $font-active-color;
+    fill: $font-active-color;
     font-weight: 500;
     appearance: none;
     border: none;
@@ -142,17 +157,19 @@ $background-color: $dark-theme-d00;
 {
     font-size: 0.875rem;
     line-height: 1.25rem;
-    padding-left: 0.75rem;
+    padding-left: 0.5rem;
     padding-right: 0.75rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-radius: 0.375rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
     align-items: center;
     cursor:pointer;
     color: darken($font-active-color, 27%);
+    fill: darken($font-active-color, 27%);
     font-weight: 500;
     appearance: none;
     border: none;
@@ -163,10 +180,12 @@ $background-color: $dark-theme-d00;
 {
     background-color: lighten($background-color, 12%);
     color: $font-hover-color;
+    fill: $font-hover-color;
 }
 
 .button:active
 {
     background-color: lighten($background-color, 15%);
     color: $font-active-color;
+    fill: $font-active-color;
 }

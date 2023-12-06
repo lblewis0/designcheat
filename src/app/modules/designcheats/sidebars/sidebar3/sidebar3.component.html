@@ -1,0 +1,22 @@
+<div class="c-main-div">
+    <!-- Sidebar footer -->
+    <div [ngClass]="{'sidebar-div-expanded' : isExpanded && !isExpanding, 
+                    'sidebar-div-expanding' : isExpanded && isExpanding,
+                    'sidebar-div-contracted' : !isExpanded && !isContracting,
+                    'sidebar-div-contracting' : !isExpanded && isContracting}">
+        <div *ngFor="let button of sidebarButtons.Buttons; let i=index">
+            <div *ngIf="button.iconPath" class="sidebar-button-logo" (click)="onClickSidebarButton(i)">
+                <svg class="sidebar-button-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960">
+                <path [attr.d]="button.iconPath"/>
+                </svg>
+                <a *ngIf="isExpanded" [routerLink]="button.route ? [button.route] : ['home']" routerLinkActive="activeButton" ariaCurrentWhenActive="page" class="sidebar-button-a">{{button.value}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

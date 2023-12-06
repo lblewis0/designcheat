@@ -4,6 +4,24 @@ $primary-theme: #382bf0;
 $dark-theme: rgb(23, 31, 41);
 $dmixing-theme: mix($dark-theme-surface, $primary-theme, $mixing-factor);
 
+$dark-theme-d00: rgb(23, 31, 41);
+$dark-theme-l03: lighten($dark-theme-d00, 3%);
+$dark-theme-l06: lighten($dark-theme-d00, 6%);
+$dark-theme-l09: lighten($dark-theme-d00, 9%);
+$dark-theme-l12: lighten($dark-theme-d00, 12%);
+$dark-theme-l15: lighten($dark-theme-d00, 15%);
+$dark-theme-l18: lighten($dark-theme-d00, 18%);
+$dark-theme-l21: lighten($dark-theme-d00, 21%);
+$dark-theme-l24: lighten($dark-theme-d00, 24%);
+$dark-theme-l27: lighten($dark-theme-d00, 27%);
+$dark-theme-l30: lighten($dark-theme-d00, 30%);
+$dark-theme-l33: lighten($dark-theme-d00, 33%);
+$dark-theme-l36: lighten($dark-theme-d00, 36%);
+$dark-theme-l39: lighten($dark-theme-d00, 39%);
+$dark-theme-l42: lighten($dark-theme-d00, 42%);
+$dark-theme-l45: lighten($dark-theme-d00, 45%);
+$dark-theme-l48: lighten($dark-theme-d00, 48%);
+
 $dark-theme-00: rgba(white, 0.03);
 $dark-theme-01: rgba(white, 0.06);
 $dark-theme-02: rgba(white, 0.09);

@@ -1,0 +1,508 @@
+@import '../../../shared/styles/colors.scss';
+
+$background-color: $dark-theme-d00;
+$background-color-2: $dark-theme-l03;
+$background-color-3: $dark-theme-l06;
+$background-color-4: $dark-theme-l09;
+$background-color-5: $dark-theme-l12;
+$background-color-6: $dark-theme-l15;
+$background-color-7: $dark-theme-l18;
+$background-color-8: $dark-theme-l21;
+$background-color-9: $dark-theme-l24;
+$background-color-10: $dark-theme-l27;
+$background-color-11: $dark-theme-l30;
+$background-color-12: $dark-theme-l33;
+$background-color-13: $dark-theme-l36;
+$background-color-14: $dark-theme-l39;
+$background-color-15: $dark-theme-l42;
+$background-color-16: $dark-theme-l45;
+
+.c-main-div
+{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+}
+
+.c-example-div
+{
+    width: 80%;
+    height: fit-content;
+    border: 1px solid $font-default-color;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    
+}
+
+.c-example-title-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+label
+{
+    color: $light-font-color-high-emphasis;
+    font-size: 1.2rem;
+}
+
+.false-window
+{
+    width: 100%;
+    height: fit-content;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.left-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 0.75rem;
+}
+
+.right-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-div
+{
+    // border: 1px solid yellow;
+    // background-color: red;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.blured-content-1
+{
+    border: 1px solid $font-default-color;
+    height: fit-content;
+    width: 100%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.button-1
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: $font-default-color;
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: lighten($background-color, 9%);
+}
+
+.button-hover-1
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: $font-hover-color;
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: lighten($background-color, 12%);
+}
+
+.button-active-1
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: $font-active-color;
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: lighten($background-color, 15%);
+}
+
+.button-selected-1
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: $font-active-color;
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: lighten($background-color, 18%);
+}
+
+.button-disabled-1
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: darken($font-active-color, 27%);
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: lighten($background-color, 6%);
+}
+
+.button-1:hover
+{
+    background-color: lighten($background-color, 12%);
+    color: $font-hover-color;
+}
+
+.button-1:active
+{
+    background-color: lighten($background-color, 15%);
+    color: $font-active-color;
+}
+
+.blured-content-2
+{
+    background-color: $background-color-2;
+    border: 1px solid $font-default-color;
+    height: fit-content;
+    width: 100%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.button-2
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: $font-default-color;
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: lighten($background-color-2, 9%);
+}
+
+.button-hover-2
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: $font-hover-color;
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: lighten($background-color-2, 12%);
+}
+
+.button-active-2
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: $font-active-color;
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: lighten($background-color-2, 15%);
+}
+
+.button-selected-2
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: $font-active-color;
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: lighten($background-color-2, 18%);
+}
+
+.button-disabled-2
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: darken($font-active-color, 27%);
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: lighten($background-color-2, 6%);
+}
+
+.button-2:hover
+{
+    background-color: lighten($background-color-2, 12%);
+    color: $font-hover-color;
+}
+
+.button-2:active
+{
+    background-color: lighten($background-color-2, 15%);
+    color: $font-active-color;
+}
+
+.blured-content-3
+{
+    background-color: $background-color-3;
+    border: 1px solid $font-default-color;
+    height: fit-content;
+    width: 100%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.button-3
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: $font-default-color;
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: lighten($background-color-3, 9%);
+}
+
+.button-hover-3
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: $font-hover-color;
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: lighten($background-color-3, 12%);
+}
+
+.button-active-3
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: $font-active-color;
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: lighten($background-color-3, 15%);
+}
+
+.button-selected-3
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: $font-active-color;
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: lighten($background-color-3, 18%);
+}
+
+.button-disabled-3
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: darken($font-active-color, 27%);
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: lighten($background-color-3, 6%);
+}
+
+.button-3:hover
+{
+    background-color: lighten($background-color-3, 12%);
+    color: $font-hover-color;
+}
+
+.button-3:active
+{
+    background-color: lighten($background-color-3, 15%);
+    color: $font-active-color;
+}
+
+.label-2
+{
+    font-size: 1rem;
+}
+
+

@@ -1,0 +1,132 @@
+@import "../../../../shared/styles/colors.scss";
+
+$background-color: $dark-theme-l12;
+
+.c-main-div
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    background-color: $background-color;
+    gap: 0px;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.sidebar-div-expanded
+{
+    box-sizing: border-box;
+    width: calc(20rem - 0.5rem - 0.5rem);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+@keyframes expandingWidth {
+    from {
+        width: 5rem;
+    }
+    to {
+        width: 19rem;
+    }
+}
+
+.sidebar-div-expanding
+{
+    box-sizing: border-box;
+    animation: expandingWidth 0.5s ease-out;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.sidebar-div-contracted
+{
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+@keyframes contractingWidth {
+    from {
+        width: 19rem;
+    }
+    to {
+        width: fit-content;
+    }
+}
+
+.sidebar-div-contracting
+{
+    box-sizing: border-box;
+    animation: contractingWidth 0.5s ease-out;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.sidebar-button-logo
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    color: $font-default-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    color: $font-default-color;
+    fill: $font-default-color;
+    cursor: pointer;
+    // border: 1px solid green;
+}
+
+.sidebar-button-icon
+{
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.sidebar-button-a
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    flex-grow: 1;
+    // border: 1px solid orangered;
+}
+
+.sidebar-button-logo:hover
+{
+    background-color: darken($background-color, 3%);
+    fill: $font-hover-color;
+    color: $font-hover-color;
+}
+
+.sidebar-button-logo:active
+{
+    background-color: darken($background-color, 6%);
+    fill: $font-hover-color;
+    color: $font-hover-color;
+}

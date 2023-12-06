@@ -195,7 +195,7 @@ export class Sidebar1Component {
         button.isContracting = true;
         setTimeout(() => {
          button.isContracting = false;
-        }, 1000)
+        }, 500)
 
       }
       else
@@ -204,7 +204,7 @@ export class Sidebar1Component {
         button.isExpanding = true;
         setTimeout(() => {
          button.isExpanding = false;
-        }, 1000)
+        }, 500)
       }
 
       console.log(this.sidebarUl);

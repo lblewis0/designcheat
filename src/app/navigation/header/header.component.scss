@@ -1,11 +1,13 @@
 @import './src/app/shared/styles/navigation-bar.scss';
 @import './src/app/shared/styles/colors.scss';
 
+$background-color: $dark-theme-l18;
+
 .h-navbar-div
 {
     height: 3.5rem;
     width: 100%;
-    background-color: transparent;
+    background-color: $background-color;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -27,7 +29,7 @@
     font-size: 1.2rem;
     line-height: 1.25rem; 
     color: $font-default-color;
-    background-color: $dark-theme-03;
+    background-color: transparent;
 }
 
 .navbar-logo
@@ -54,7 +56,7 @@
 .navbar-default
 {
     height: 100%;
-    background-color: $dark-theme-03;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -134,20 +136,20 @@
     justify-content: center;
     align-items: center;
     cursor:pointer;
-    background-color: rgba(black, 0.5);
+    background-color: darken($background-color, 9%);
     color: $font-active-color;
     font-weight: 500;
 }
 
 .navbar-navbutton:hover
 {
-    background-color: rgba(black, 0.3);
+    background-color: darken($background-color, 3%);
     color: $font-hover-color;
 }
 
 .navbar-navbutton:active
 {
-    background-color: rgba(black, 0.5);
+    background-color: darken($background-color, 6%);
     color: $font-active-color;
 }
 
@@ -173,15 +175,15 @@
     justify-content: center;
     align-items: center;
     border-radius: 0.375rem;
-    background-color: $dark-theme;
+    background-color: darken($background-color, 9%);
     fill: $font-default-color;
 }
 
 .navbar-searchinput:focus-within
 {
     background-color: $font-default-color;
-    fill: $dark-theme;
-    color: $dark-theme;
+    fill: darken($background-color, 9%);
+    color: darken($background-color, 9%);
 }
 
 .navbar-searchinput-logo
@@ -223,7 +225,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    background-color: $dark-theme-04;
+    background-color: lighten($background-color, 6%);
     color: $font-default-color;
     fill: $font-default-color;
     cursor: pointer;
@@ -231,14 +233,14 @@
 
 .navbar-button:hover
 {
-    background-color: $dark-theme-05;
+    background-color: lighten($background-color, 9%);
     color: $font-hover-color;
     fill: $font-hover-color;
 }
 
 .navbar-button:active
 {
-    background-color: $dark-theme-06;
+    background-color: lighten($background-color, 12%);
     color: $font-active-color;
     fill: $font-active-color;
 }
@@ -265,11 +267,11 @@
 .navbar-circle-icon-button:hover
 {
     fill: $font-hover-color;
-    background-color: rgba(black, 0.3);
+    background-color: darken($background-color, 6%);
 }
 
 .navbar-circle-icon-button:active
 {
     fill: $font-active-color;
-    background-color: rgba(black, 0.5);
+    background-color: darken($background-color, 6%);
 }

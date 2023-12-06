@@ -67,12 +67,29 @@ $background-color: $dark-theme-d00;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
     cursor:pointer;
     color: $font-default-color;
     font-weight: 500;
     appearance: none;
     border: none;
     background-color: lighten($background-color, 9%);
+}
+
+span
+{
+    line-height: 1.25rem;
+    font-size: 0.8rem;
+    color: $font-active-color;
+    background-color: green;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    border-radius: 0.3rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
 }
 
 .button-hover
@@ -88,6 +105,7 @@ $background-color: $dark-theme-d00;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
     cursor:pointer;
     color: $font-hover-color;
     font-weight: 500;
@@ -109,6 +127,7 @@ $background-color: $dark-theme-d00;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
     cursor:pointer;
     color: $font-active-color;
     font-weight: 500;
@@ -130,6 +149,7 @@ $background-color: $dark-theme-d00;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
     cursor:pointer;
     color: $font-active-color;
     font-weight: 500;
@@ -151,6 +171,7 @@ $background-color: $dark-theme-d00;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
     cursor:pointer;
     color: darken($font-active-color, 27%);
     font-weight: 500;

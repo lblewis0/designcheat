@@ -1,6 +1,6 @@
 @import "../../../../shared/styles/colors.scss";
 
-$background-color: $dark-theme-l12;
+$background-color: $dark-theme-l03;
 
 .c-main-div
 {
@@ -22,7 +22,7 @@ $background-color: $dark-theme-l12;
     box-sizing: border-box;
     min-height: 3.5rem;
     width: 100%;
-    border-bottom: 1px dashed $font-default-color;
+    border-bottom: 1px dashed $dark-theme-l12;
 }
 
 .sidebar-footer
@@ -35,7 +35,7 @@ $background-color: $dark-theme-l12;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-top: 0.5rem;
-    border-top: 1px solid lighten($background-color, 27%);
+    border-top: 1px solid $dark-theme-l12;
     // // border: 1px solid red;
 }
 
@@ -78,14 +78,14 @@ $background-color: $dark-theme-l12;
 
 .sidebar-button-logo:hover
 {
-    background-color: darken($background-color, 3%);
+    background-color: lighten($background-color, 3%);
     fill: $font-hover-color;
     color: $font-hover-color;
 }
 
 .sidebar-button-logo:active
 {
-    background-color: darken($background-color, 6%);
+    background-color: lighten($background-color, 6%);
     fill: $font-hover-color;
     color: $font-hover-color;
 }
@@ -112,16 +112,16 @@ $background-color: $dark-theme-l12;
 
 .sidebar-button-wlogo:hover
 {
-    background-color: darken($background-color, 3%);
+    background-color: lighten($background-color, 3%);
     fill: $font-hover-color;
     color: $font-hover-color;
 }
 
 .sidebar-button-wlogo:active
 {
-    background-color: darken($background-color, 6%);
-    fill: $font-hover-color;
-    color: $font-hover-color;
+    background-color: lighten($background-color, 6%);
+    fill: $font-active-color;
+    color: $font-active-color;
 }
 
 .sidebar-logo-div
@@ -194,9 +194,9 @@ $background-color: $dark-theme-l12;
 
 .sidebar-main-ul::-webkit-scrollbar-thumb {
 
-    background-color: darken($background-color, 6%);
-    color: darken($background-color, 6%);
-    fill: darken($background-color, 6%);
+    background-color: lighten($background-color, 6%);
+    color: lighten($background-color, 6%);
+    fill: lighten($background-color, 6%);
     border-radius: 0.3rem;
 }
 
@@ -251,24 +251,24 @@ $background-color: $dark-theme-l12;
     justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
-    background-color: darken($background-color, 9%);
+    background-color: lighten($background-color, 9%);
     color: $font-active-color;
-    fill: $font-default-color;
+    fill: $font-active-color;
     // border: 1px solid lightgray;
 }
 
 .sidebar-li-item-logo-childs:hover
 {
-    background-color: darken($background-color, 3%);
+    background-color: lighten($background-color, 3%);
     fill: $font-hover-color;
     color: $font-hover-color;
 }
 
 .sidebar-li-item-logo-childs:active
 {
-    background-color: darken($background-color, 6%);
-    fill: $font-hover-color;
-    color: $font-hover-color;
+    background-color: lighten($background-color, 6%);
+    fill: $font-active-color;
+    color: $font-active-color;
 }
 
 .sidebar-li-item-wlogo-childs
@@ -305,24 +305,24 @@ $background-color: $dark-theme-l12;
     justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
-    background-color: darken($background-color, 9%);
+    background-color: lighten($background-color, 9%);
     color: $font-active-color;
-    fill: $font-default-color;
+    fill: $font-active-color;
     // border: 1px solid lightgray;
 }
 
 .sidebar-li-item-wlogo-childs:hover
 {
-    background-color: darken($background-color, 3%);
+    background-color: lighten($background-color, 3%);
     fill: $font-hover-color;
     color: $font-hover-color;
 }
 
 .sidebar-li-item-wlogo-childs:active
 {
-    background-color: darken($background-color, 6%);
-    fill: $font-hover-color;
-    color: $font-hover-color;
+    background-color: lighten($background-color, 6%);
+    fill: $font-active-color;
+    color: $font-active-color;
 }
 
 .sidebar-li-item-logo-wchilds
@@ -359,24 +359,24 @@ $background-color: $dark-theme-l12;
     justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
-    background-color: darken($background-color, 9%);
+    background-color: lighten($background-color, 9%);
     color: $font-active-color;
-    fill: $font-default-color;
+    fill: $font-active-color;
     // border: 1px solid lightgray;
 }
 
 .sidebar-li-item-logo-wchilds:hover
 {
-    background-color: darken($background-color, 3%);
+    background-color: lighten($background-color, 3%);
     fill: $font-hover-color;
     color: $font-hover-color;
 }
 
 .sidebar-li-item-logo-wchilds:active
 {
-    background-color: darken($background-color, 6%);
-    fill: $font-hover-color;
-    color: $font-hover-color;
+    background-color: lighten($background-color, 6%);
+    fill: $font-active-color;
+    color: $font-active-color;
 }
 
 .sidebar-li-item-wlogo-wchilds
@@ -413,36 +413,36 @@ $background-color: $dark-theme-l12;
     justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
-    background-color: darken($background-color, 9%);
+    background-color: lighten($background-color, 9%);
     color: $font-active-color;
-    fill: $font-default-color;
+    fill: $font-active-color;
     // border: 1px solid lightgray;
 }
 
 .sidebar-li-item-wlogo-wchilds:hover
 {
-    background-color: darken($background-color, 3%);
+    background-color: lighten($background-color, 3%);
     fill: $font-hover-color;
     color: $font-hover-color;
 }
 
 .sidebar-li-item-wlogo-wchilds:active
 {
-    background-color: darken($background-color, 6%);
-    fill: $font-hover-color;
-    color: $font-hover-color;
+    background-color: lighten($background-color, 6%);
+    fill: $font-active-color;
+    color: $font-active-color;
 }
 
 .sidebar-li-item-logo:hover
 {
-    background-color: darken($background-color, 3%);
+    background-color: lighten($background-color, 3%);
     fill: $font-hover-color;
     color: $font-hover-color;
 }
 
 .sidebar-li-item-logo:active
 {
-    background-color: darken($background-color, 6%);
+    background-color: lighten($background-color, 6%);
     fill: $font-active-color;
     color: $font-active-color;
 }

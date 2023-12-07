@@ -1,0 +1,28 @@
+@import '../../../../shared/styles/colors.scss';
+
+$background-color: $dark-theme-d00;
+
+.c-main-div
+{
+    border: 1px solid $dark-theme-l12;
+    height: fit-content;
+    width: 100%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: $background-color;
+}
+
+.code-input
+{
+    width: 90%;
+    height: 10rem;
+    color: $font-default-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

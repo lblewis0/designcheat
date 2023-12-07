@@ -22,6 +22,8 @@ import { ButtonSpan1Component } from './buttons/button-span/button-span-1/button
 import { ButtonNotification2Component } from './buttons/button-notification/button-notification-2/button-notification-2.component';
 import { ButtonGroupComponent } from './button-group/button-group.component';
 import { ButtonGroup1Component } from './button-group/button-group-1/button-group-1.component';
+import { CodeInputComponent } from './code-input/code-input.component';
+import { CodeInput1Component } from './code-input/code-input-1/code-input-1.component';
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import { ButtonGroup1Component } from './button-group/button-group-1/button-grou
     ButtonSpan1Component,
     ButtonNotification2Component,
     ButtonGroupComponent,
-    ButtonGroup1Component
+    ButtonGroup1Component,
+    CodeInputComponent,
+    CodeInput1Component
   ],
   imports: [
     CommonModule,

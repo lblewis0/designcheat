@@ -1,6 +1,6 @@
 @import "../../../../shared/styles/colors.scss";
 
-$background-color: $dark-theme-l12;
+$background-color: $dark-theme-l03;
 
 .c-main-div
 {
@@ -119,14 +119,14 @@ $background-color: $dark-theme-l12;
 
 .sidebar-button-logo:hover
 {
-    background-color: darken($background-color, 3%);
+    background-color: lighten($background-color, 3%);
     fill: $font-hover-color;
     color: $font-hover-color;
 }
 
 .sidebar-button-logo:active
 {
-    background-color: darken($background-color, 6%);
-    fill: $font-hover-color;
-    color: $font-hover-color;
+    background-color: lighten($background-color, 6%);
+    fill: $font-active-color;
+    color: $font-active-color;
 }

@@ -136,20 +136,20 @@ $background-color: $dark-theme-l06;
     justify-content: center;
     align-items: center;
     cursor:pointer;
-    background-color: darken($background-color, 9%);
+    background-color: lighten($background-color, 9%);
     color: $font-active-color;
     font-weight: 500;
 }
 
 .navbar-navbutton:hover
 {
-    background-color: darken($background-color, 3%);
+    background-color: lighten($background-color, 3%);
     color: $font-hover-color;
 }
 
 .navbar-navbutton:active
 {
-    background-color: darken($background-color, 6%);
+    background-color: lighten($background-color, 6%);
     color: $font-active-color;
 }
 
@@ -267,11 +267,11 @@ $background-color: $dark-theme-l06;
 .navbar-circle-icon-button:hover
 {
     fill: $font-hover-color;
-    background-color: darken($background-color, 6%);
+    background-color: lighten($background-color, 6%);
 }
 
 .navbar-circle-icon-button:active
 {
     fill: $font-active-color;
-    background-color: darken($background-color, 6%);
+    background-color: lighten($background-color, 6%);
 }

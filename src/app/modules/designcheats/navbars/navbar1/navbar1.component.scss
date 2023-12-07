@@ -1,7 +1,7 @@
 @import '../../../../shared/styles/navigation-bar.scss';
 @import '../../../../shared/styles/colors.scss';
 
-$background-color: $dark-theme-l18;
+$background-color: $dark-theme-l06;
 
 .h-navbar-div
 {
@@ -138,20 +138,20 @@ $background-color: $dark-theme-l18;
     justify-content: center;
     align-items: center;
     cursor:pointer;
-    background-color: darken($background-color, 9%);
+    background-color: lighten($background-color, 9%);
     color: $font-active-color;
     font-weight: 500;
 }
 
 .navbar-navbutton:hover
 {
-    background-color: darken($background-color, 3%);
+    background-color: lighten($background-color, 3%);
     color: $font-hover-color;
 }
 
 .navbar-navbutton:active
 {
-    background-color: darken($background-color, 6%);
+    background-color: lighten($background-color, 6%);
     color: $font-active-color;
 }
 
@@ -177,15 +177,22 @@ $background-color: $dark-theme-l18;
     justify-content: center;
     align-items: center;
     border-radius: 0.375rem;
-    background-color: darken($background-color, 9%);
+    background-color: lighten($background-color, 9%);
+    fill: $font-default-color;
+    color: $font-default-color;
+}
+
+.navbar-searchinput::placeholder
+{
+    color: $font-default-color;
     fill: $font-default-color;
 }
 
 .navbar-searchinput:focus-within
 {
     background-color: $font-default-color;
-    fill: darken($background-color, 9%);
-    color: darken($background-color, 9%);
+    fill: lighten($background-color, 9%);
+    color: lighten($background-color, 9%);
 }
 
 .navbar-searchinput-logo
@@ -269,11 +276,11 @@ $background-color: $dark-theme-l18;
 .navbar-circle-icon-button:hover
 {
     fill: $font-hover-color;
-    background-color: darken($background-color, 6%);
+    background-color: lighten($background-color, 6%);
 }
 
 .navbar-circle-icon-button:active
 {
     fill: $font-active-color;
-    background-color: darken($background-color, 9%);
+    background-color: lighten($background-color, 9%);
 }

@@ -19,6 +19,9 @@ import { Button10Component } from './buttons/button/button-10/button-10.componen
 import { ButtonIcon1Component } from './buttons/button-icon/button-icon-1/button-icon-1.component';
 import { ButtonNotification1Component } from './buttons/button-notification/button-notification-1/button-notification-1.component';
 import { ButtonSpan1Component } from './buttons/button-span/button-span-1/button-span-1.component';
+import { ButtonNotification2Component } from './buttons/button-notification/button-notification-2/button-notification-2.component';
+import { ButtonGroupComponent } from './button-group/button-group.component';
+import { ButtonGroup1Component } from './button-group/button-group-1/button-group-1.component';
 
 
 @NgModule({
@@ -37,7 +40,10 @@ import { ButtonSpan1Component } from './buttons/button-span/button-span-1/button
     Button10Component,
     ButtonIcon1Component,
     ButtonNotification1Component,
-    ButtonSpan1Component
+    ButtonSpan1Component,
+    ButtonNotification2Component,
+    ButtonGroupComponent,
+    ButtonGroup1Component
   ],
   imports: [
     CommonModule,

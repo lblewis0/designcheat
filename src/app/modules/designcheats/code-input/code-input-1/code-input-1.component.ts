@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { AfterViewChecked, AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { codeInputModel } from 'src/app/shared/models/codeInputModels';
 
 @Component({
@@ -6,8 +6,12 @@ import { codeInputModel } from 'src/app/shared/models/codeInputModels';
   templateUrl: './code-input-1.component.html',
   styleUrls: ['./code-input-1.component.scss']
 })
-export class CodeInput1Component {
+export class CodeInput1Component implements AfterViewChecked, AfterViewInit{
 
+  @ViewChild('inputCmd1') inputCmd1!: ElementRef;
+  @ViewChild('inputCmd2') inputCmd2!: ElementRef;
+  @ViewChild('inputCmd3') inputCmd3!: ElementRef;
+  
   InputValue: string = "";
   backspaceStillDown = false;
   deleteStillDown = false;
@@ -53,19 +57,6 @@ export class CodeInput1Component {
         this.onValueChange();
     }
 
-  }
-
-  onKeyUp(event: KeyboardEvent) {
-    // switch (event.key) {
-    //   case 'Backspace':
-    //     this.backspaceStillDown = false;
-    //     break;
-    //   case 'Delete':
-    //     this.deleteStillDown = false;
-    //     break;
-    //   default:
-    //     this.onValueChange();
-    // }
   }
 
   onValueChange(): void {
@@ -215,5 +206,43 @@ export class CodeInput1Component {
   resetInput() {
     this.InputValue = "" as string;
   }
+
+  ngAfterViewChecked(): void {
+    
+    if(this.InputCode.Col === 0)
+    {
+       this.inputCmd1.nativeElement.focus();
+    }
+    
+    if(this.InputCode.Col === this.InputCode.Lines[this.InputCode.Ln].fullLine?.length)
+    {
+      this.inputCmd2.nativeElement.focus();
+    }
+
+    if(this.InputCode.Col > 0 && this.InputCode.Col !== this.InputCode.Lines[this.InputCode.Ln].fullLine?.length)
+    {
+      this.inputCmd3.nativeElement.focus();
+    }
+  }
+
+  ngAfterViewInit(): void {
+    
+    if(this.InputCode.Col === 0)
+    {
+       this.inputCmd1.nativeElement.focus();
+    }
+    
+    if(this.InputCode.Col === this.InputCode.Lines[this.InputCode.Ln].fullLine?.length)
+    {
+      this.inputCmd2.nativeElement.focus();
+    }
+
+    if(this.InputCode.Col > 0 && this.InputCode.Col !== this.InputCode.Lines[this.InputCode.Ln].fullLine?.length)
+    {
+      this.inputCmd3.nativeElement.focus();
+    }
+  }
+
+  
 
 }

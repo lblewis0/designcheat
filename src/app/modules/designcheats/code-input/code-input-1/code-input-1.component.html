@@ -14,8 +14,7 @@
                         class="cmd-input"
                         [(ngModel)]="InputValue"
                         (keydown)="onKeyDown($event)"
-                        (keyup)="onKeyUp($event)"
-                        ngFocus>
+                        #inputCmd1>
                 <div class="cmd-line-last">{{line.fullLine}}</div>
             </div>
             <div *ngIf="InputCode.Col === line.fullLine?.length" class="cmd-line-code">
@@ -25,8 +24,7 @@
                         class="cmd-input"
                         [(ngModel)]="InputValue"
                         (keydown)="onKeyDown($event)"
-                        (keyup)="onKeyUp($event)"
-                        ngFocus>
+                        #inputCmd2>
             </div>
             <div *ngIf="InputCode.Col !== 0 && InputCode.Col !== line.fullLine?.length" class="cmd-line-code">
                 <div class="cmd-line-first">{{line.fullLine?.slice(0, InputCode.Col)}}</div>
@@ -35,8 +33,7 @@
                         class="cmd-input"
                         [(ngModel)]="InputValue"
                         (keydown)="onKeyDown($event)"
-                        (keyup)="onKeyUp($event)"
-                        ngFocus>
+                        #inputCmd3>
                 <div class="cmd-line-last">{{line.fullLine?.substring(InputCode.Col)}}</div>
             </div>
         </div>

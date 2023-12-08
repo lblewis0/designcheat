@@ -1,5 +1,44 @@
 <div class="c-main-div">
     <div class="code-input">
-        Code input
+        <div class="cmd-line-div">
+            <div class="cmd-line-ln">1</div>
+            <div class="cmd-line-code">code</div>
+        </div>
+    </div>
+    <div class="code-input">
+        <div *ngFor="let line of InputCode.Lines; let i=index" class="cmd-line-div">
+            <div class="cmd-line-ln">{{i + 1}}</div>
+            <div *ngIf="InputCode.Col === 0" class="cmd-line-code">
+                <input *ngIf="InputCode.Ln === i" 
+                        type="text" 
+                        class="cmd-input"
+                        [(ngModel)]="InputValue"
+                        (keydown)="onKeyDown($event)"
+                        (keyup)="onKeyUp($event)"
+                        ngFocus>
+                <div class="cmd-line-last">{{line.fullLine}}</div>
+            </div>
+            <div *ngIf="InputCode.Col === line.fullLine?.length" class="cmd-line-code">
+                <div class="cmd-line-first">{{line.fullLine}}</div>
+                <input *ngIf="InputCode.Ln === i" 
+                        type="text" 
+                        class="cmd-input"
+                        [(ngModel)]="InputValue"
+                        (keydown)="onKeyDown($event)"
+                        (keyup)="onKeyUp($event)"
+                        ngFocus>
+            </div>
+            <div *ngIf="InputCode.Col !== 0 && InputCode.Col !== line.fullLine?.length" class="cmd-line-code">
+                <div class="cmd-line-first">{{line.fullLine?.slice(0, InputCode.Col)}}</div>
+                <input *ngIf="InputCode.Ln === i" 
+                        type="text" 
+                        class="cmd-input"
+                        [(ngModel)]="InputValue"
+                        (keydown)="onKeyDown($event)"
+                        (keyup)="onKeyUp($event)"
+                        ngFocus>
+                <div class="cmd-line-last">{{line.fullLine?.substring(InputCode.Col)}}</div>
+            </div>
+        </div>
     </div>
 </div>

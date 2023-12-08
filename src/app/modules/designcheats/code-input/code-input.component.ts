@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { codeInputModel } from 'src/app/shared/models/codeInputModels';
 
 @Component({
   selector: 'app-code-input',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./code-input.component.scss']
 })
 export class CodeInputComponent {
+
 
 }

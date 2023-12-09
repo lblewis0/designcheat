@@ -10,6 +10,7 @@ import { DesigncheatsModule } from './modules/designcheats/designcheats.module';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from './shared/shared.module';
+import { MonacoEditorModule } from 'ngx-monaco-editor-v2';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { SharedModule } from './shared/shared.module';
     RouterOutlet,
     RouterLink,
     RouterLinkActive,
-    DesigncheatsModule,
+    DesigncheatsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

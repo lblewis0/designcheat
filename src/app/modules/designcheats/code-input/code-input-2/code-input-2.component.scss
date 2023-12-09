@@ -1,0 +1,31 @@
+@import '../../../../shared/styles/colors.scss';
+
+$background-color: $dark-theme-d00;
+
+.c-main-div
+{
+    border: 1px solid $dark-theme-l12;
+    height: 30rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: $background-color;
+}
+
+ngx-monaco-editor
+{
+    height: 100%;
+    width: 100%;
+}
+
+// .codeEditor
+// {
+//     .editor-container {
+//         height: 100%;
+//         width: 100%;
+//     }
+// }

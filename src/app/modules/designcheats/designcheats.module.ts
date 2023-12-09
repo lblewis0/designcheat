@@ -25,6 +25,7 @@ import { ButtonGroup1Component } from './button-group/button-group-1/button-grou
 import { CodeInputComponent } from './code-input/code-input.component';
 import { CodeInput1Component } from './code-input/code-input-1/code-input-1.component';
 import { FormsModule } from '@angular/forms';
+import { CodeInput2Component } from './code-input/code-input-2/code-input-2.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { FormsModule } from '@angular/forms';
     ButtonGroupComponent,
     ButtonGroup1Component,
     CodeInputComponent,
-    CodeInput1Component
+    CodeInput1Component,
+    CodeInput2Component
   ],
   imports: [
     CommonModule,

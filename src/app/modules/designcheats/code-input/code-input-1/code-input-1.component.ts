@@ -1,4 +1,4 @@
-import { AfterViewChecked, AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { AfterViewChecked, AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { codeInputModel } from 'src/app/shared/models/codeInputModels';
 
 @Component({
@@ -6,15 +6,15 @@ import { codeInputModel } from 'src/app/shared/models/codeInputModels';
   templateUrl: './code-input-1.component.html',
   styleUrls: ['./code-input-1.component.scss']
 })
-export class CodeInput1Component implements AfterViewChecked, AfterViewInit{
+export class CodeInput1Component implements AfterViewChecked {
 
   @ViewChild('inputCmd1') inputCmd1!: ElementRef;
   @ViewChild('inputCmd2') inputCmd2!: ElementRef;
   @ViewChild('inputCmd3') inputCmd3!: ElementRef;
-  
+  @ViewChild('inputCmd4') inputCmd4!: ElementRef;
+
   InputValue: string = "";
-  backspaceStillDown = false;
-  deleteStillDown = false;
+  ignoredKeys: string[] = ['Shift','Control','Meta','Alt','CapsLock','NumLock','AltGraph','Escape','AudioVolumeMute','AudioVolumeDown','AudioVolumeUp','Insert','MediaPlayPause','MediaTrackPrevious','MediaTrackNext']
 
   InputCode: codeInputModel = {
     Ln: 0,
@@ -38,23 +38,34 @@ export class CodeInput1Component implements AfterViewChecked, AfterViewInit{
 
     console.log(event.key);
 
-    switch (event.key) {
-      case 'Backspace':
-        this.backspaceStillDown = true;
-        this.onInputBackspace();
-        break;
-      case 'Delete':
-        this.deleteStillDown = true;
-        this.onInputDelete();
-        break;
-      case 'ArrowLeft':
-        this.onArrowLeft();
-        break;
-      case 'ArrowRight':
-        this.onArrowRight();
-        break;
-      default:
-        this.onValueChange();
+    if(!this.ignoredKeys.includes(event.key))
+    {
+      switch (event.key) {
+        case 'Backspace':
+          if(this.InputCode.Col > 0)
+          {
+            this.onInputBackspace();
+          }
+          break;
+        case 'Delete':
+          let activeLine = this.InputCode.Lines[this.InputCode.Ln].fullLine;
+          if(activeLine)
+          {
+             if(this.InputCode.Col < activeLine.length)
+             {
+                this.onInputDelete();
+             }
+          }
+          break;
+        case 'ArrowLeft':
+          this.onArrowLeft();
+          break;
+        case 'ArrowRight':
+          this.onArrowRight();
+          break;
+        default:
+          this.onValueChange();
+      }
     }
 
   }
@@ -65,7 +76,13 @@ export class CodeInput1Component implements AfterViewChecked, AfterViewInit{
 
     let activeLine = this.InputCode.Lines[this.InputCode.Ln].fullLine;
 
-    console.log('Input value: ' + this.InputValue);
+    if(this.InputValue === '')
+    {
+      this.InputValue = ' ';
+    }
+
+    console.log(`Input value: '${this.InputValue}'`);
+
     console.log('FullLine before: ' + activeLine);
 
     let newLine = '';
@@ -74,7 +91,7 @@ export class CodeInput1Component implements AfterViewChecked, AfterViewInit{
       if (this.InputCode.Col === 0) {
         console.log("true");
 
-        newLine = this.InputValue + activeLine;
+        newLine = this.InputValue.concat(activeLine);
       }
 
       if (this.InputCode.Col === activeLine.length) {
@@ -134,8 +151,14 @@ export class CodeInput1Component implements AfterViewChecked, AfterViewInit{
 
     this.InputCode.Lines[this.InputCode.Ln].fullLine = newLine;
 
-    if (this.InputValue.length === 0) {
+    if(this.InputCode.Col > 0)
+    {
       this.InputCode.Col -= 1;
+    }
+    else
+    {
+      console.log('Col 0');
+      
     }
 
     console.log('FullLine after: ' + newLine);
@@ -145,14 +168,14 @@ export class CodeInput1Component implements AfterViewChecked, AfterViewInit{
   onInputDelete(): void {
     console.log('onInputDelete()');
     console.log('Initial col: ' + this.InputCode.Col);
-  
+
     let activeLine = this.InputCode.Lines[this.InputCode.Ln].fullLine;
-  
+
     console.log('Input value: ' + this.InputValue);
     console.log('FullLine before: ' + activeLine);
-  
+
     let newLine = '';
-  
+
     if(activeLine) {
       if (this.InputCode.Col < activeLine.length) {
         if (this.InputCode.Col === 0) {
@@ -160,23 +183,23 @@ export class CodeInput1Component implements AfterViewChecked, AfterViewInit{
         }
         if (this.InputCode.Col > 0 && this.InputCode.Col < activeLine.length) {
           console.log(`activeLine : ${activeLine}`)
-  
+
           let substring1 = activeLine.substring(0, this.InputCode.Col);
           console.log(`substring1 (0, ${this.InputCode.Col - 1}) : ${substring1}`);
-  
+
           let substring2 = activeLine.substring(this.InputCode.Col + 1, activeLine.length);
           console.log(`substring2 (${this.InputCode.Col + 1}, ${activeLine.length}) : ${substring2}`);
-  
+
           newLine = substring1 + this.InputValue + substring2;
         }
       }
     }
-  
+
       this.InputCode.Lines[this.InputCode.Ln].fullLine = newLine;
-  
+
     console.log('FullLine after: ' + newLine);
     console.log('Final Col:' + this.InputCode.Col)
-  
+
   }
 
   onArrowLeft(): void {
@@ -200,20 +223,22 @@ export class CodeInput1Component implements AfterViewChecked, AfterViewInit{
         this.InputCode.Col += 1;
       }
     }
-     
+
   }
-  
+
   resetInput() {
     this.InputValue = "" as string;
   }
 
   ngAfterViewChecked(): void {
+
     
+
     if(this.InputCode.Col === 0)
     {
        this.inputCmd1.nativeElement.focus();
     }
-    
+
     if(this.InputCode.Col === this.InputCode.Lines[this.InputCode.Ln].fullLine?.length)
     {
       this.inputCmd2.nativeElement.focus();
@@ -224,25 +249,5 @@ export class CodeInput1Component implements AfterViewChecked, AfterViewInit{
       this.inputCmd3.nativeElement.focus();
     }
   }
-
-  ngAfterViewInit(): void {
-    
-    if(this.InputCode.Col === 0)
-    {
-       this.inputCmd1.nativeElement.focus();
-    }
-    
-    if(this.InputCode.Col === this.InputCode.Lines[this.InputCode.Ln].fullLine?.length)
-    {
-      this.inputCmd2.nativeElement.focus();
-    }
-
-    if(this.InputCode.Col > 0 && this.InputCode.Col !== this.InputCode.Lines[this.InputCode.Ln].fullLine?.length)
-    {
-      this.inputCmd3.nativeElement.focus();
-    }
-  }
-
-  
 
 }

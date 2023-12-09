@@ -183,7 +183,7 @@ export class SidebarComponent {
       {
          for(let i = 0; i < this.sidebar.Buttons.length;i++)
          {
-            console.log(this.sidebar.Buttons[i].value);
+            // console.log(this.sidebar.Buttons[i].value);
             
             this.sidebar.Buttons[i].isSelected = false;
           
@@ -215,8 +215,6 @@ export class SidebarComponent {
          button.isExpanding = false;
         }, 1000)
       }
-
-      console.log(this.sidebar);
       
   }
     
@@ -226,7 +224,7 @@ export class SidebarComponent {
       {
          for(let i = 0; i < button.childs.length; i++)
          {
-            console.log(button.childs[i].value);
+            // console.log(button.childs[i].value);
 
             button.childs[i].isSelected = false;
 

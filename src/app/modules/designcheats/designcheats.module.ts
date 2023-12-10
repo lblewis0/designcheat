@@ -26,8 +26,8 @@ import { CodeInputComponent } from './code-input/code-input.component';
 import { CodeInput1Component } from './code-input/code-input-1/code-input-1.component';
 import { FormsModule } from '@angular/forms';
 import { CodeInput2Component } from './code-input/code-input-2/code-input-2.component';
-import { codeEditor } from 'src/app/shared/models/classes/codeEditor';
 import { MonacoEditorModule } from 'ngx-monaco-editor-v2';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({

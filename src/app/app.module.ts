@@ -10,7 +10,15 @@ import { DesigncheatsModule } from './modules/designcheats/designcheats.module';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from './shared/shared.module';
-import { MonacoEditorModule } from 'ngx-monaco-editor-v2';
+import { MonacoEditorModule, NgxMonacoEditorConfig } from 'ngx-monaco-editor-v2';
+
+const monacoConfig: NgxMonacoEditorConfig = {
+  baseUrl: 'assets',
+  defaultOptions: {scrollBeyondLastLine: false},
+  onMonacoLoad: () => { console.log((<any>window).monaco); },
+  requireConfig: { preferScriptTags: true},
+  monacoRequire: (<any>window).monacoRequire
+}
 
 @NgModule({
   declarations: [
@@ -26,7 +34,8 @@ import { MonacoEditorModule } from 'ngx-monaco-editor-v2';
     RouterOutlet,
     RouterLink,
     RouterLinkActive,
-    DesigncheatsModule
+    DesigncheatsModule,
+    MonacoEditorModule.forRoot(monacoConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,6 +5,7 @@ import { Sidebar1Component } from './sidebar1/sidebar1.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { Sidebar3Component } from './sidebar3/sidebar3.component';
+import { Sidebar4Component } from './sidebar4/sidebar4.component';
 
 
 
@@ -12,7 +13,8 @@ import { Sidebar3Component } from './sidebar3/sidebar3.component';
   declarations: [
     SidebarsComponent,
     Sidebar1Component,
-    Sidebar3Component
+    Sidebar3Component,
+    Sidebar4Component
   ],
   imports: [
     CommonModule,

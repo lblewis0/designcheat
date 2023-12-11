@@ -6,6 +6,7 @@ import { ButtonsComponent } from './buttons/buttons.component';
 import { BackgroundsComponent } from './backgrounds/backgrounds.component';
 import { ButtonGroupComponent } from './button-group/button-group.component';
 import { CodeInputComponent } from './code-input/code-input.component';
+import { InputsComponent } from './inputs/inputs.component';
 
 const routes: Routes = [
   {path: "navbars", component: NavbarsComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: "buttons", component: ButtonsComponent},
   {path: "backgrounds", component: BackgroundsComponent},
   {path: "button-group", component: ButtonGroupComponent},
-  {path: "code-input", component: CodeInputComponent}
+  {path: "code-input", component: CodeInputComponent},
+  {path: "inputs", component: InputsComponent}
 ];
 
 @NgModule({

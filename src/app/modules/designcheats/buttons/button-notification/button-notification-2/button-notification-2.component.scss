@@ -92,6 +92,7 @@ $background-color: $dark-theme-d00;
     vertical-align: middle;
     border-radius: 0.625rem;
     cursor: pointer;
+    border: 2px solid $background-color;
 }
 
 .button:active > .button-point-span
@@ -128,6 +129,7 @@ $background-color: $dark-theme-d00;
     vertical-align: middle;
     border-radius: 0.625rem;
     cursor: pointer;
+    border: 2px solid $background-color;
 }
 
 .button-point-span-hover
@@ -145,6 +147,7 @@ $background-color: $dark-theme-d00;
     vertical-align: middle;
     border-radius: 0.625rem;
     cursor: pointer;
+    border: 2px solid $background-color;
 }
 
 .button-point-span-active
@@ -162,6 +165,7 @@ $background-color: $dark-theme-d00;
     vertical-align: middle;
     border-radius: 0.625rem;
     cursor: pointer;
+    border: 2px solid $background-color;
 }
 
 .button-point-span-selected
@@ -179,6 +183,7 @@ $background-color: $dark-theme-d00;
     vertical-align: middle;
     border-radius: 0.625rem;
     cursor: pointer;
+    border: 2px solid $background-color;
 }
 
 .button-point-span-disabled
@@ -195,6 +200,7 @@ $background-color: $dark-theme-d00;
     display: inline-block;
     vertical-align: middle;
     border-radius: 0.625rem;
+    border: 2px solid $background-color;
 }
 
 .button-hover

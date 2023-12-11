@@ -28,6 +28,8 @@ import { FormsModule } from '@angular/forms';
 import { CodeInput2Component } from './code-input/code-input-2/code-input-2.component';
 import { MonacoEditorModule } from 'ngx-monaco-editor-v2';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { Input1Component } from './inputs/input-1/input-1.component';
+import { InputsComponent } from './inputs/inputs.component';
 
 
 @NgModule({
@@ -52,7 +54,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     ButtonGroup1Component,
     CodeInputComponent,
     CodeInput1Component,
-    CodeInput2Component
+    CodeInput2Component,
+    InputsComponent,
+    Input1Component
   ],
   imports: [
     CommonModule,

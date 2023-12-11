@@ -1,9 +1,27 @@
 <div class="c-main-div">
+    <!-- <div class="sidebar-title-div">Sidebar title</div> -->
+    <!-- Sidebar navigation list -->
     <ul class="sidebar-main-ul">
         <ng-container *ngFor="let button of sidebar.Buttons; let i=index" 
         [ngTemplateOutlet]="buttonTemplate"
         [ngTemplateOutletContext]="{ $implicit: button}"></ng-container>
     </ul>
+    <!-- Sidebar footer -->
+    <div class="sidebar-footer">
+        <div *ngFor="let button of sidebarButtons.Buttons; let i=index">
+            <div *ngIf="button.iconPath" class="sidebar-button-logo">
+                <svg class="sidebar-button-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960">
+                <path [attr.d]="button.iconPath"/>
+                </svg>
+                <a [routerLink]="button.route ? [button.route] : ['home']" routerLinkActive="activeButton" ariaCurrentWhenActive="page" class="sidebar-button-a">{{button.value}}</a>
+            </div>
+            <div *ngIf="!button.iconPath" class="sidebar-button-wlogo">
+                <a [routerLink]="button.route ? [button.route] : ['home']" routerLinkActive="activeButton" ariaCurrentWhenActive="page" class="sidebar-button-a">{{button.value}}</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <ng-template #buttonTemplate let-button>

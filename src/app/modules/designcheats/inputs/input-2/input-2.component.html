@@ -1,0 +1,24 @@
+<div class="c-main-div">
+    <label for="input" class="input-label">Input with label with inline leading add-on and trailing dropdown</label>
+    <div class="input-div">
+        <label class="input-leading-label">{{currentListSymbol}}</label>
+        <input class="input" type="text" placeholder="Input 2">
+        <button class="input-trailing-dropdown-button" (click)="onClickDropdownButton()">
+            <a class="input-trailing-dropdown-button-a">{{currentListElement}}</a>
+            <svg class="input-trailing-dropdown-button-icon"
+                 xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 -960 960 960">
+                 <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+            </svg>
+            <span *ngIf="isExpanded" class="input-trailing-dropdown-button-dropdown-span">
+                <ul class="input-trailing-dropdown-button-ul">
+                    <li *ngFor="let li of selectButtonList; let i=index" 
+                        [ngClass]="{'input-trailing-dropdown-button-li-first' : i === 0, 
+                                    'input-trailing-dropdown-button-li-last' : i === selectButtonList.length, 
+                                    'input-trailing-dropdown-button-li' : i > 0 && i < selectButtonList.length}"
+                        (click)="onLiClick(i)">{{li}}</li>
+                </ul>
+            </span>
+        </button>
+    </div>
+</div>

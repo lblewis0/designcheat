@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class CodeInput2Component {
 
-  editorOptions = {theme: 'vs-dark', language: 'csharp'};
+  editorOptions = {theme: 'vs-dark', language: 'typescript'};
   code: string= 'function x() {\nconsole.log("Hello world!");\n}';
 }

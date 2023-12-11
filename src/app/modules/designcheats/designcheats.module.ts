@@ -30,6 +30,16 @@ import { MonacoEditorModule } from 'ngx-monaco-editor-v2';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { Input1Component } from './inputs/input-1/input-1.component';
 import { InputsComponent } from './inputs/inputs.component';
+import { Input2Component } from './inputs/input-2/input-2.component';
+import { Input3Component } from './inputs/input-3/input-3.component';
+import { Input4Component } from './inputs/input-4/input-4.component';
+import { Input5Component } from './inputs/input-5/input-5.component';
+import { Input6Component } from './inputs/input-6/input-6.component';
+import { Input7Component } from './inputs/input-7/input-7.component';
+import { Input8Component } from './inputs/input-8/input-8.component';
+import { Input9Component } from './inputs/input-9/input-9.component';
+import { TablesComponent } from './tables/tables.component';
+import { Table1Component } from './tables/table-1/table-1.component';
 
 
 @NgModule({
@@ -56,7 +66,17 @@ import { InputsComponent } from './inputs/inputs.component';
     CodeInput1Component,
     CodeInput2Component,
     InputsComponent,
-    Input1Component
+    Input1Component,
+    Input2Component,
+    Input3Component,
+    Input4Component,
+    Input5Component,
+    Input6Component,
+    Input7Component,
+    Input8Component,
+    Input9Component,
+    TablesComponent,
+    Table1Component
   ],
   imports: [
     CommonModule,

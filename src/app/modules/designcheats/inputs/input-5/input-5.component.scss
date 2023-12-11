@@ -25,7 +25,7 @@ $background-color: $dark-theme-d00;
     font-weight: 500;
 }
 
-.input
+.input-disabled
 {
     box-sizing: border-box;
     border: 1px solid lighten($background-color, 12%);
@@ -37,8 +37,9 @@ $background-color: $dark-theme-d00;
     padding-bottom: 0.5rem;
     padding-left: 0.75rem;
     border-radius: 0.375rem;
-    background-color: darken($background-color, 6%);
+    background-color: lighten($background-color, 3%);
     color: $font-default-color;
+    cursor: not-allowed;
     
 }
 

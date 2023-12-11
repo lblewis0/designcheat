@@ -1,0 +1,20 @@
+<div class="c-main-div">
+    <label for="input-1" class="input-label">Input with label and validation status (type v, i or w)</label>
+    <div class="input-div">
+        <input class="input"
+               id="input-1" 
+               type="text" 
+               placeholder="Input 4" 
+               (keyup)="onInputChange()" 
+               [(ngModel)]="inputValue"
+               [ngClass]="{'input' : isDefault, 
+                           'input-valid' : isValid,
+                           'input-invalid' : isInvalid, 
+                           'input-warning' : isWarning}">
+        <label [ngClass]="{'input-help-label' : isDefault, 
+                           'input-help-label-valid' : isValid, 
+                           'input-help-label-invalid' : isInvalid, 
+                           'input-help-label-warning' : isWarning}">Help label</label>
+    </div>
+</div>
+

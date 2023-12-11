@@ -1,0 +1,181 @@
+@import '../../../../shared/styles/colors.scss';
+
+$background-color: $dark-theme-d00;
+
+.c-main-div
+{
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 40%;
+    border: 1px solid lighten($background-color, 12%);
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+}
+
+.input-div
+{
+    height: fit-content;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-label
+{
+    width: 100%;
+    color: $font-default-color;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.input
+{
+    box-sizing: border-box;
+    border: 1px solid lighten($background-color, 12%);
+    width: 100%;
+    outline: none;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    border-radius: 0.375rem;
+    background-color: darken($background-color, 6%);
+    color: $font-default-color;
+}
+
+.input-valid
+{
+    box-sizing: border-box;
+    border: 1px solid lighten(green, 12%);
+    width: 100%;
+    outline: none;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    border-radius: 0.375rem;
+    background-color: darken($background-color, 6%);
+    color: $font-default-color;
+}
+
+.input-invalid
+{
+    box-sizing: border-box;
+    border: 1px solid lighten(red, 6%);
+    width: 100%;
+    outline: none;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    border-radius: 0.375rem;
+    background-color: darken($background-color, 6%);
+    color: $font-default-color;
+}
+
+.input-warning
+{
+    box-sizing: border-box;
+    border: 1px solid lighten(orangered, 12%);
+    width: 100%;
+    outline: none;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    border-radius: 0.375rem;
+    background-color: darken($background-color, 6%);
+    color: $font-default-color;
+}
+
+.input:focus
+{
+    box-sizing: border-box;
+    border: 1px solid lighten($background-color, 12%);
+    outline: 2px solid lighten($background-color, 12%);
+    background-color: $font-default-color;
+    color: darken($background-color, 6%);
+}
+
+.input-valid:focus
+{
+    box-sizing: border-box;
+    border: 1px solid lighten(green, 12%);
+    outline: 2px solid lighten(green, 12%);
+    background-color: $font-default-color;
+    color: darken($background-color, 6%);
+}
+
+.input-invalid:focus
+{
+    box-sizing: border-box;
+    border: 1px solid lighten(red, 6%);
+    outline: 2px solid lighten(red, 6%);
+    background-color: $font-default-color;
+    color: darken($background-color, 6%);
+}
+
+.input-warning:focus
+{
+    box-sizing: border-box;
+    border: 1px solid lighten(orangered, 12%);
+    outline: 2px solid lighten(orangered, 12%);
+    background-color: $font-default-color;
+    color: darken($background-color, 6%);
+}
+
+.input-help-label
+{
+    color: rgba($font-default-color, 50%);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.3rem;
+    padding-left: 0.3rem;
+    font-weight: 400;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-help-label-valid
+{
+    color: green;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.3rem;
+    padding-left: 0.3rem;
+    font-weight: 400;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-help-label-invalid
+{
+    color: red;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.3rem;
+    padding-left: 0.3rem;
+    font-weight: 400;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-help-label-warning
+{
+    color: orangered;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.3rem;
+    padding-left: 0.3rem;
+    font-weight: 400;
+    width: 100%;
+    box-sizing: border-box;
+}

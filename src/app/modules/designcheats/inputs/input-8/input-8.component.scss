@@ -1,0 +1,92 @@
+@import '../../../../shared/styles/colors.scss';
+
+$background-color: $dark-theme-d00;
+
+.c-main-div
+{
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 40%;
+    border: 1px solid lighten($background-color, 12%);
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+}
+
+.input-label
+{
+    color: $font-default-color;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.input-trailing-icon
+{
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    padding: 0.37em;
+    cursor: pointer;
+}
+
+.input-div
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.75rem;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    border-radius: 0.375rem;
+    height: fit-content;
+    border: 1px solid lighten($background-color, 12%);
+    background-color: darken($background-color, 6%);
+    gap: 0rem;
+    width: 100%;
+    color: gray;
+    fill: gray;
+}
+
+.input-div:focus-within
+{
+    box-sizing: border-box;
+    border: 1px solid lighten($background-color, 12%);
+    outline: 2px solid lighten($background-color, 12%);
+    background-color: $font-default-color;
+    color: darken($background-color, 6%);
+    fill: darken($background-color, 6%);
+
+    a{
+        color: darken($background-color, 6%);
+    }
+}
+
+.input
+{
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0rem;
+    border-radius: 0.375rem;
+    background-color: transparent;
+    color: $font-default-color;
+    flex-grow: 1;
+}
+
+.input:focus
+{
+    color: darken($background-color, 6%);
+    fill: darken($background-color, 6%);
+}

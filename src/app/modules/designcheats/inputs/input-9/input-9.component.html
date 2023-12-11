@@ -1,0 +1,24 @@
+<div class="c-main-div">
+    <label for="input" class="input-label">Input with label and leading dropdown</label>
+    <div class="input-div">
+        <button class="input-leading-dropdown-button" (click)="onClickDropdownButton()">
+            <a class="input-leading-dropdown-button-a">{{currentListElement}}</a>
+            <svg class="input-leading-dropdown-button-icon"
+                 xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 -960 960 960">
+                 <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+            </svg>
+            <span *ngIf="isExpanded" class="input-leading-dropdown-button-dropdown-span">
+                <ul class="input-leading-dropdown-button-ul">
+                    <li *ngFor="let li of selectButtonList; let i=index" 
+                        [ngClass]="{'input-leading-dropdown-button-li-first' : i === 0, 
+                                    'input-leading-dropdown-button-li-last' : i === selectButtonList.length, 
+                                    'input-leading-dropdown-button-li' : i > 0 && i < selectButtonList.length}"
+                        (click)="onLiClick(i)">{{li}}</li>
+                </ul>
+            </span>
+        </button>
+        <input class="input" type="text" placeholder="Input 9">
+    </div>
+</div>
+

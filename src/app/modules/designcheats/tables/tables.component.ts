@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Contact } from 'src/app/shared/models/interfaces/contacts';
 
 @Component({
   selector: 'app-tables',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './tables.component.scss'
 })
 export class TablesComponent {
+
 
 }

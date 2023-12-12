@@ -41,6 +41,8 @@ import { Input9Component } from './inputs/input-9/input-9.component';
 import { TablesComponent } from './tables/tables.component';
 import { Table2Component } from './tables/table-2/table-2.component';
 import { Table3Component } from './tables/table-3/table-3.component';
+import { PaginationComponent } from './pagination/pagination.component';
+import { Pagination1Component } from './pagination/pagination-1/pagination-1.component';
 
 
 @NgModule({
@@ -78,7 +80,9 @@ import { Table3Component } from './tables/table-3/table-3.component';
     Input9Component,
     TablesComponent,
     Table2Component,
-    Table3Component
+    Table3Component,
+    PaginationComponent,
+    Pagination1Component
   ],
   imports: [
     CommonModule,

@@ -8,6 +8,7 @@ import { ButtonGroupComponent } from './button-group/button-group.component';
 import { CodeInputComponent } from './code-input/code-input.component';
 import { InputsComponent } from './inputs/inputs.component';
 import { TablesComponent } from './tables/tables.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 const routes: Routes = [
   {path: "navbars", component: NavbarsComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: "button-group", component: ButtonGroupComponent},
   {path: "code-input", component: CodeInputComponent},
   {path: "inputs", component: InputsComponent},
-  {path: "tables", component: TablesComponent}
+  {path: "tables", component: TablesComponent},
+  {path: "paginations", component: PaginationComponent}
 ];
 
 @NgModule({

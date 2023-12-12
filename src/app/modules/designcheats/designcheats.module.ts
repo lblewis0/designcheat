@@ -39,7 +39,8 @@ import { Input7Component } from './inputs/input-7/input-7.component';
 import { Input8Component } from './inputs/input-8/input-8.component';
 import { Input9Component } from './inputs/input-9/input-9.component';
 import { TablesComponent } from './tables/tables.component';
-import { Table1Component } from './tables/table-1/table-1.component';
+import { Table2Component } from './tables/table-2/table-2.component';
+import { Table3Component } from './tables/table-3/table-3.component';
 
 
 @NgModule({
@@ -76,7 +77,8 @@ import { Table1Component } from './tables/table-1/table-1.component';
     Input8Component,
     Input9Component,
     TablesComponent,
-    Table1Component
+    Table2Component,
+    Table3Component
   ],
   imports: [
     CommonModule,

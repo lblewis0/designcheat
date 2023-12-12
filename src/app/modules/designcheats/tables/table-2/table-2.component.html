@@ -1,0 +1,152 @@
+<div class="c-main-div">
+    <div class="table-title-div">
+        <label class="table-title">Contacts</label>
+    </div>
+    <div class="table-div">
+        <div class="table-col-div">
+            <div class="table-col-div-header">
+                #id
+            </div>
+            <div id="scroll1" class="table-col-div-body-first" #scroll1 (scroll)="scrollEvent($event, '#scroll1')">
+                <div *ngFor="let contact of contacts; let i=index"
+                     [ngClass]="{'table-col-div-body-element': hoverIndex !== i && activeIndex !== i,
+                                 'table-col-div-body-element-hover' : hoverIndex === i && activeIndex !== i,
+                                 'table-col-div-body-element-active' : activeIndex === i}"  
+                     (mouseenter)="onMouseEnter(i)"
+                     (mouseleave)="onMouseLeave(i)"
+                     (mousedown)="onMouseDown(i)"
+                     (mouseup)="onMouseUp(i)">{{i + 1}}</div>
+            </div>
+        </div>
+        <div class="table-col-div">
+            <div class="table-col-div-header">
+                firstname
+            </div>
+            <div id="scroll2" class="table-col-div-body" #scroll2 (scroll)="scrollEvent($event, '#scroll2')">
+                <div *ngFor="let contact of contacts; let i=index" 
+                     [ngClass]="{'table-col-div-body-element': hoverIndex !== i,
+                                 'table-col-div-body-element-hover' : hoverIndex ===i,
+                                 'table-col-div-body-element-active' : activeIndex === i}"
+                     (mouseenter)="onMouseEnter(i)"
+                     (mouseleave)="onMouseLeave(i)"
+                     (mousedown)="onMouseDown(i)"
+                     (mouseup)="onMouseUp(i)">{{contact.firstname}}</div>
+            </div>
+        </div>
+        <div class="table-col-div">
+            <div class="table-col-div-header">
+                lastname
+            </div>
+            <div id="scroll3" class="table-col-div-body" #scroll3 (scroll)="scrollEvent($event, '#scroll3')">
+                <div *ngFor="let contact of contacts; let i=index" 
+                     [ngClass]="{'table-col-div-body-element': hoverIndex !== i,
+                                 'table-col-div-body-element-hover' : hoverIndex ===i,
+                                 'table-col-div-body-element-active' : activeIndex === i}"
+                     (mouseenter)="onMouseEnter(i)"
+                     (mouseleave)="onMouseLeave(i)"
+                     (mousedown)="onMouseDown(i)"
+                     (mouseup)="onMouseUp(i)">{{contact.lastname}}</div>
+            </div>
+        </div>
+        <div class="table-col-div">
+            <div class="table-col-div-header">
+                phone
+            </div>
+            <div id="scroll4" class="table-col-div-body" #scroll4 (scroll)="scrollEvent($event, '#scroll4')">
+                <div *ngFor="let contact of contacts; let i=index" 
+                     [ngClass]="{'table-col-div-body-element': hoverIndex !== i,
+                                 'table-col-div-body-element-hover' : hoverIndex ===i,
+                                 'table-col-div-body-element-active' : activeIndex === i}"
+                     (mouseenter)="onMouseEnter(i)"
+                     (mouseleave)="onMouseLeave(i)"
+                     (mousedown)="onMouseDown(i)"
+                     (mouseup)="onMouseUp(i)">{{contact.phoneNumber}}</div>
+            </div>
+        </div>
+        <div class="table-col-div">
+            <div class="table-col-div-header">
+                mail
+            </div>
+            <div id="scroll5" class="table-col-div-body" #scroll5 (scroll)="scrollEvent($event, '#scroll5')">
+                <div *ngFor="let contact of contacts; let i=index" 
+                     [ngClass]="{'table-col-div-body-element': hoverIndex !== i,
+                                 'table-col-div-body-element-hover' : hoverIndex ===i,
+                                 'table-col-div-body-element-active' : activeIndex === i}"
+                     (mouseenter)="onMouseEnter(i)"
+                     (mouseleave)="onMouseLeave(i)"
+                     (mousedown)="onMouseDown(i)"
+                     (mouseup)="onMouseUp(i)">{{contact.mail}}</div>
+            </div>
+        </div>
+        <div class="table-col-div">
+            <div class="table-col-div-header">
+                street
+            </div>
+            <div id="scroll6" class="table-col-div-body" #scroll6 (scroll)="scrollEvent($event, '#scroll6')">
+                <div *ngFor="let contact of contacts; let i=index" 
+                     [ngClass]="{'table-col-div-body-element': hoverIndex !== i,
+                                 'table-col-div-body-element-hover' : hoverIndex ===i,
+                                 'table-col-div-body-element-active' : activeIndex === i}"
+                     (mouseenter)="onMouseEnter(i)"
+                     (mouseleave)="onMouseLeave(i)"
+                     (mousedown)="onMouseDown(i)"
+                     (mouseup)="onMouseUp(i)">{{contact.street}}</div>
+            </div>
+        </div>
+        <div class="table-col-div">
+            <div class="table-col-div-header">
+                number
+            </div>
+            <div id="scroll7" class="table-col-div-body" #scroll7 (scroll)="scrollEvent($event, '#scroll7')">
+                <div *ngFor="let contact of contacts; let i=index" 
+                     [ngClass]="{'table-col-div-body-element': hoverIndex !== i,
+                                 'table-col-div-body-element-hover' : hoverIndex ===i,
+                                 'table-col-div-body-element-active' : activeIndex === i}"
+                     (mouseenter)="onMouseEnter(i)"
+                     (mouseleave)="onMouseLeave(i)"
+                     (mousedown)="onMouseDown(i)"
+                     (mouseup)="onMouseUp(i)">{{contact.streetNumber}}</div>
+            </div>
+        </div>
+        <div class="table-col-div">
+            <div class="table-col-div-header">
+                postal code
+            </div>
+            <div id="scroll8" class="table-col-div-body" #scroll8 (scroll)="scrollEvent($event, '#scroll8')">
+                <div *ngFor="let contact of contacts; let i=index" 
+                     [ngClass]="{'table-col-div-body-element': hoverIndex !== i,
+                                 'table-col-div-body-element-hover' : hoverIndex ===i,
+                                 'table-col-div-body-element-active' : activeIndex === i}"
+                     (mouseenter)="onMouseEnter(i)"
+                     (mouseleave)="onMouseLeave(i)"
+                     (mousedown)="onMouseDown(i)"
+                     (mouseup)="onMouseUp(i)">{{contact.postalCode}}</div>
+            </div>
+        </div>
+        <div class="table-col-div">
+            <div class="table-col-div-header">
+                locality
+            </div>
+            <div id="scroll9" class="table-col-div-body-last" #scroll9 (scroll)="scrollEvent($event, '#scroll9')">
+                <div *ngFor="let contact of contacts; let i=index" 
+                     [ngClass]="{'table-col-div-body-element': hoverIndex !== i,
+                                 'table-col-div-body-element-hover' : hoverIndex ===i,
+                                 'table-col-div-body-element-active' : activeIndex === i}"
+                     (mouseenter)="onMouseEnter(i)"
+                     (mouseleave)="onMouseLeave(i)"
+                     (mousedown)="onMouseDown(i)"
+                     (mouseup)="onMouseUp(i)">{{contact.locality}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="table-footer-div">
+        <button class="button">
+            <svg class="button-icon" 
+                 xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 -960 960 960" >
+                <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
+            </svg>
+            <a>Add contact</a>
+        </button>
+    </div>
+</div>

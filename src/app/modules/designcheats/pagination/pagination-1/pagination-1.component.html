@@ -1,6 +1,6 @@
 <div class="c-main-div">
     <div class="left-div">
-        <label class="component-label">Pagination 1</label>
+        <label class="component-label">Pagination with previous and next buttons</label>
     </div>
     <div class="right-div">
         <div class="pagination-div">
@@ -9,7 +9,8 @@
                     (click)="onPreviousClick()"><a>Previous</a></button>
             <button *ngFor="let page of paginations; let i=index" 
                     [ngClass]="{'pagination-button': selectPage !== page,
-                                'pagination-button-selected': selectPage === page}"><a>{{page}}</a></button>
+                                'pagination-button-selected': selectPage === page}"
+                    (click)="onPageClick(i)"><a>{{page}}</a></button>
             <button [ngClass]="{'pagination-next-button': selectPage !== paginations.length,
                                 'pagination-next-button-disabled': selectPage === paginations.length}"
                     (click)="onNextClick()"><a>Next</a></button>

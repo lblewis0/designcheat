@@ -43,6 +43,12 @@ import { Table2Component } from './tables/table-2/table-2.component';
 import { Table3Component } from './tables/table-3/table-3.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { Pagination1Component } from './pagination/pagination-1/pagination-1.component';
+import { Pagination2Component } from './pagination/pagination-2/pagination-2.component';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { Breadcrumb1Component } from './breadcrumbs/breadcrumb-1/breadcrumb-1.component';
+import { Breadcrumb2Component } from './breadcrumbs/breadcrumb-2/breadcrumb-2.component';
+import { AccordionsComponent } from './accordions/accordions.component';
+import { Accordion1Component } from './accordions/accordion-1/accordion-1.component';
 
 
 @NgModule({
@@ -82,7 +88,13 @@ import { Pagination1Component } from './pagination/pagination-1/pagination-1.com
     Table2Component,
     Table3Component,
     PaginationComponent,
-    Pagination1Component
+    Pagination1Component,
+    Pagination2Component,
+    BreadcrumbsComponent,
+    Breadcrumb1Component,
+    Breadcrumb2Component,
+    AccordionsComponent,
+    Accordion1Component
   ],
   imports: [
     CommonModule,

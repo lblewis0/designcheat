@@ -1,0 +1,34 @@
+<div class="c-main-div">
+    <div class="left-div">
+        <label class="component-label">Pagination with previous and next icons</label>
+    </div>
+    <div class="right-div">
+        <div class="pagination-div">
+            <button [ngClass]="{'pagination-previous-button-icon': selectPage !== 1,
+                                'pagination-previous-button-icon-disabled': selectPage === 1}"
+                    (click)="onPreviousClick()">
+                    <svg class="pagination-previous-button-icon-icon" 
+                         xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 -960 960 960" >
+                        <path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/>
+                    </svg>
+            </button>
+
+            <button *ngFor="let page of paginations; let i=index" 
+                    [ngClass]="{'pagination-button': selectPage !== page,
+                                'pagination-button-selected': selectPage === page}"
+                    (click)="onPageClick(i)"><a>{{page}}</a></button>
+
+            <button [ngClass]="{'pagination-next-button-icon': selectPage !== paginations.length,
+                                'pagination-next-button-icon-disabled': selectPage === paginations.length}"
+                    (click)="onNextClick()">
+                    <svg class="pagination-next-button-icon-icon" 
+                         xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 -960 960 960" >
+                        <path d="M383-480 200-664l56-56 240 240-240 240-56-56 183-184Zm264 0L464-664l56-56 240 240-240 240-56-56 183-184Z"/>
+                    </svg>
+            </button>
+        </div>
+    </div>
+</div>
+

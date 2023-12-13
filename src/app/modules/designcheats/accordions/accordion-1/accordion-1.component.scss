@@ -1,0 +1,286 @@
+@import '../../../../shared/styles/colors.scss';
+
+$background-color: $dark-theme-d00;
+
+.c-main-div
+{
+    height: fit-content;
+    width: 80%;
+    border-radius: 0.375rem;
+    border: 1px solid lighten($background-color, 12%);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion-div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $font-default-color;
+    width: 70%;
+    border: 1px solid lighten($background-color, 12%);
+    border-radius: 0.375rem;
+}
+
+.accordion-first-element
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 0.375rem 0.375rem 0 0;
+    // border: 1px solid yellow;
+}
+
+.accordion-element
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // border: 1px solid red;
+}
+
+.accordion-last-element
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 0 0 0.375rem 0.375rem;
+    // border: 1px solid blue;
+}
+
+.accordion-first-element-header
+{
+    height: fit-content;
+    border-bottom: 1px solid lighten($background-color, 12%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.75rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-radius: 0.375rem 0.375rem 0 0;
+    box-sizing: border-box;
+    background-color: lighten($background-color, 3%);
+    color: $font-default-color;
+    fill: $font-default-color;
+}
+
+.accordion-first-element-header:hover
+{
+    background-color: lighten($background-color, 6%);
+    color: $font-hover-color;
+    fill: $font-hover-color;
+}
+
+.accordion-first-element-header:active
+{
+    background-color: lighten($background-color, 9%);
+    color: $font-active-color;
+    fill: $font-active-color;
+}
+
+.accordion-header
+{
+    height: fit-content;
+    border-top: 1px solid lighten($background-color, 12%);
+    border-bottom: 1px solid lighten($background-color, 12%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.75rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    box-sizing: border-box;
+    background-color: lighten($background-color, 3%);
+    color: $font-default-color;
+    fill: $font-default-color;
+}
+
+.accordion-header:hover
+{
+    background-color: lighten($background-color, 6%);
+    color: $font-hover-color;
+    fill: $font-hover-color;
+}
+
+.accordion-header:active
+{
+    background-color: lighten($background-color, 9%);
+    color: $font-active-color;
+    fill: $font-active-color;
+}
+
+.accordion-header-left-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.accordion-header-right-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid orangered;
+}
+
+.accordion-expander
+{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+@keyframes rotateExpanding {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotateContracting {
+    0% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.accordion-expander-expanding
+{
+    height: 1.25rem;
+    width: 1.25rem;
+    animation: rotateExpanding 0.5s ease-out;
+}
+
+.accordion-expander-contracting
+{
+    height: 1.25rem;
+    width: 1.25rem;
+    transform: rotate(0deg);
+    animation: rotateContracting 0.5s ease-out;
+}
+
+.accordion-content
+{
+    height: fit-content;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+@keyframes expandingHeight {
+    from {
+        height: 0rem;
+    }
+    to {
+        height: fit-content;
+    }
+}
+
+@keyframes contractingHeight {
+    from {
+        height: fit-content;
+    }
+    to {
+        height: 0rem;
+    }
+}
+
+.accordion-content-expanding
+{
+    animation: expandingHeight 0.5s ease-out;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.accordion-content-contracting
+{
+    animation: contractingHeight 0.5s ease-out;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.accordion-content-last
+{
+    height: fit-content;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-radius: 0 0 0.375rem 0.375rem;
+}
+
+@keyframes expandingHeight {
+    from {
+        height: 0rem;
+    }
+    to {
+        height: fit-content;
+    }
+}
+
+@keyframes contractingHeight {
+    from {
+        height: fit-content;
+    }
+    to {
+        height: 0rem;
+    }
+}
+
+.accordion-content-expanding-last
+{
+    animation: expandingHeight 0.5s ease-out;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.accordion-content-contracting-last
+{
+    animation: contractingHeight 0.5s ease-out;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}

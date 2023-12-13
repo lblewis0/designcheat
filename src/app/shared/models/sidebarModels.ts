@@ -27,3 +27,4 @@ export interface sidebarButton
     isSelected: boolean;
     iconPath?: string;
 }
+

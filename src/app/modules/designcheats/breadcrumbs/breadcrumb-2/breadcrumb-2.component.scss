@@ -1,0 +1,115 @@
+@import '../../../../shared/styles/colors.scss';
+
+$background-color: $dark-theme-d00;
+
+.c-main-div
+{
+    border: 1px solid lighten($background-color, 12%);
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 80%;
+    padding: 0.5rem;
+}
+
+.left-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    color: $font-default-color;
+}
+
+.right-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.breadcrumb-div
+{
+    border: 1px solid lighten($background-color, 12%);
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.breadcrumb-first-route-element-icon
+{
+    height: 1.25rem;
+    width: 1.25rem;
+    fill: $font-default-color;
+    cursor: pointer;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.breadcrumb-first-route-element-icon:hover
+{
+    fill: $font-hover-color;
+}
+
+.breadcrumb-first-route-element-icon:active
+{
+    fill: $font-active-color;
+}
+
+.breadcrumb-route-element-label
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: $font-default-color;
+    cursor: pointer;
+}
+
+.breadcrumb-route-element-label:hover
+{
+    color: $font-hover-color;
+}
+
+.breadcrumb-route-element-label:active
+{
+    color: $font-active-color;
+}
+
+.breadcrumb-last-route-element-label
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.75rem;
+    color: $font-default-color;
+    cursor: pointer;
+}
+
+.breadcrumb-last-route-element-label:hover
+{
+    color: $font-hover-color;
+}
+
+.breadcrumb-last-route-element-label:active
+{
+    color: $font-active-color;
+}
+
+.breadcrumb-right-arrow-icon
+{
+    fill: $font-default-color;
+    width: 1.25rem;
+    height: 1.25rem;
+}

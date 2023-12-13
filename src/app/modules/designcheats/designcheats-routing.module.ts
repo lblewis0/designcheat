@@ -9,6 +9,8 @@ import { CodeInputComponent } from './code-input/code-input.component';
 import { InputsComponent } from './inputs/inputs.component';
 import { TablesComponent } from './tables/tables.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { AccordionsComponent } from './accordions/accordions.component';
 
 const routes: Routes = [
   {path: "navbars", component: NavbarsComponent},
@@ -19,7 +21,9 @@ const routes: Routes = [
   {path: "code-input", component: CodeInputComponent},
   {path: "inputs", component: InputsComponent},
   {path: "tables", component: TablesComponent},
-  {path: "paginations", component: PaginationComponent}
+  {path: "paginations", component: PaginationComponent},
+  {path: "breadcrumbs", component: BreadcrumbsComponent},
+  {path: "accordions", component: AccordionsComponent}
 ];
 
 @NgModule({

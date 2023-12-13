@@ -1,19 +1,17 @@
 <div class="c-main-div">
     <div class="accordion-div">
         <div class="accordion-first-element">
-            <div class="accordion-first-element-header" (click)="onHeaderClick(0)">
+            <div [ngClass]="getAccordionHeaderClass(0)" (click)="onHeaderClick(0)">
                 <div class="accordion-header-left-div">{{accordions.Accordions[0].value}}</div>
                 <div class="accordion-header-right-div">
                     <svg *ngIf="accordions.Accordions[0].isExpanded" 
-                         [ngClass]="{'accordion-expander': accordions.Accordions[0].isExpanded && !accordions.Accordions[0].isExpanding, 
-                                     'accordion-expander-expanding': accordions.Accordions[0].isExpanded && accordions.Accordions[0].isExpanding}"
+                         [ngClass]="getExpanderClass(0)"
                          xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 -960 960 960">
                         <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
                     </svg>
                     <svg *ngIf="!accordions.Accordions[0].isExpanded" 
-                         [ngClass]="{'accordion-expander': !accordions.Accordions[0].isExpanded && !accordions.Accordions[0].isContracting, 
-                                     'accordion-expander-contracting': !accordions.Accordions[0].isExpanded && accordions.Accordions[0].isContracting}"
+                         [ngClass]="getExpanderClass(0)"
                          xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 -960 960 960">
                         <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/>
@@ -21,26 +19,23 @@
                 </div>
             </div>
             <ng-container *ngIf="accordions.Accordions[0].isExpanded">
-                <div [ngClass]="{'accordion-content': accordions.Accordions[0].isExpanded && !accordions.Accordions[0].isExpanding,
-                                 'accordion-content-expanding': accordions.Accordions[0].isExpanded && accordions.Accordions[0].isExpanding,
-                                 'accordion-content-contracting': !accordions.Accordions[0].isExpanded && accordions.Accordions[0].isContracting}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, ratione labore deleniti maxime modi accusantium magnam quia, consequuntur minima, porro iusto. Laudantium ut quia enim sint, voluptatum sit cum voluptate?
+                <div [ngClass]="getAccordionContentClass(0)">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, ratione labore deleniti maxime modi accusantium magnam quia, consequuntur minima, porro iusto. Laudantium ut quia enim sint, voluptatum sit cum voluptate?
                 </div>
             </ng-container>
-            
+        </div>
         <div class="accordion-element">
-            <div class="accordion-header" (click)="onHeaderClick(1)">
+            <div [ngClass]="getAccordionHeaderClass(1)" (click)="onHeaderClick(1)">
                 <div class="accordion-header-left-div">{{accordions.Accordions[1].value}}</div>
                 <div class="accordion-header-right-div">
                     <svg *ngIf="accordions.Accordions[1].isExpanded" 
-                         [ngClass]="{'accordion-expander': accordions.Accordions[1].isExpanded && !accordions.Accordions[1].isExpanding, 
-                                     'accordion-expander-expanding': accordions.Accordions[1].isExpanded && accordions.Accordions[1].isExpanding}"
+                         [ngClass]="getExpanderClass(1)"
                          xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 -960 960 960">
                         <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
                     </svg>
-                    <svg *ngIf="!accordions.Accordions[1].isExpanded" 
-                         [ngClass]="{'accordion-expander': !accordions.Accordions[1].isExpanded && !accordions.Accordions[1].isContracting, 
-                                     'accordion-expander-contracting': !accordions.Accordions[1].isExpanded && accordions.Accordions[1].isContracting}"
+                    <svg *ngIf="!accordions.Accordions[1].isExpanded"
+                         [ngClass]="getExpanderClass(1)" 
                          xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 -960 960 960">
                         <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/>
@@ -48,26 +43,23 @@
                 </div>
             </div>
             <ng-container *ngIf="accordions.Accordions[1].isExpanded">
-                <div [ngClass]="{'accordion-content': accordions.Accordions[1].isExpanded && !accordions.Accordions[1].isExpanding,
-                                 'accordion-content-expanding': accordions.Accordions[1].isExpanded && accordions.Accordions[1].isExpanding,
-                                 'accordion-content-contracting': !accordions.Accordions[1].isExpanded && accordions.Accordions[1].isContracting}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, ratione labore deleniti maxime modi accusantium magnam quia, consequuntur minima, porro iusto. Laudantium ut quia enim sint, voluptatum sit cum voluptate?
+                <div [ngClass]="getAccordionContentClass(1)">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, ratione labore deleniti maxime modi accusantium magnam quia, consequuntur minima, porro iusto. Laudantium ut quia enim sint, voluptatum sit cum voluptate?
                 </div>
             </ng-container>
         </div>
         <div class="accordion-last-element">
-            <div class="accordion-header" (click)="onHeaderClick(2)">
+            <div [ngClass]="getAccordionHeaderClass(2)" (click)="onHeaderClick(2)">
                 <div class="accordion-header-left-div">{{accordions.Accordions[2].value}}</div>
                 <div class="accordion-header-right-div">
                     <svg *ngIf="accordions.Accordions[2].isExpanded" 
-                         [ngClass]="{'accordion-expander': accordions.Accordions[2].isExpanded && !accordions.Accordions[2].isExpanding, 
-                                     'accordion-expander-expanding': accordions.Accordions[2].isExpanded && accordions.Accordions[2].isExpanding}"
+                         [ngClass]="getExpanderClass(2)"
                          xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 -960 960 960">
                         <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
                     </svg>
                     <svg *ngIf="!accordions.Accordions[2].isExpanded" 
-                         [ngClass]="{'accordion-expander': !accordions.Accordions[2].isExpanded && !accordions.Accordions[2].isContracting, 
-                                     'accordion-expander-contracting': !accordions.Accordions[2].isExpanded && accordions.Accordions[2].isContracting}"
+                         [ngClass]="getExpanderClass(2)"
                          xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 -960 960 960">
                         <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/>
@@ -75,9 +67,8 @@
                 </div>
             </div>
             <ng-container *ngIf="accordions.Accordions[2].isExpanded">
-                <div [ngClass]="{'accordion-content-last': accordions.Accordions[2].isExpanded && !accordions.Accordions[2].isExpanding,
-                                 'accordion-content-expanding-last': accordions.Accordions[2].isExpanded && accordions.Accordions[2].isExpanding,
-                                 'accordion-content-contracting-last': !accordions.Accordions[2].isExpanded && accordions.Accordions[2].isContracting}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, ratione labore deleniti maxime modi accusantium magnam quia, consequuntur minima, porro iusto. Laudantium ut quia enim sint, voluptatum sit cum voluptate?
+                <div [ngClass]="getAccordionContentClass(2)">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, ratione labore deleniti maxime modi accusantium magnam quia, consequuntur minima, porro iusto. Laudantium ut quia enim sint, voluptatum sit cum voluptate?
                 </div>
             </ng-container>
         </div>

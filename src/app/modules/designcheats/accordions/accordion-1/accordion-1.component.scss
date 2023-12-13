@@ -5,7 +5,7 @@ $background-color: $dark-theme-d00;
 .c-main-div
 {
     height: fit-content;
-    width: 80%;
+    width: 60%;
     border-radius: 0.375rem;
     border: 1px solid lighten($background-color, 12%);
     padding: 0.5rem;
@@ -22,7 +22,7 @@ $background-color: $dark-theme-d00;
     justify-content: center;
     align-items: center;
     color: $font-default-color;
-    width: 70%;
+    width: 100%;
     border: 1px solid lighten($background-color, 12%);
     border-radius: 0.375rem;
 }
@@ -79,6 +79,29 @@ $background-color: $dark-theme-d00;
     background-color: lighten($background-color, 3%);
     color: $font-default-color;
     fill: $font-default-color;
+    cursor: pointer;
+}
+
+.accordion-first-element-header-contracted
+{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.75rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-radius: 0.375rem 0.375rem 0 0;
+    box-sizing: border-box;
+    background-color: lighten($background-color, 3%);
+    color: $font-default-color;
+    fill: $font-default-color;
+    cursor: pointer;
 }
 
 .accordion-first-element-header:hover
@@ -95,7 +118,21 @@ $background-color: $dark-theme-d00;
     fill: $font-active-color;
 }
 
-.accordion-header
+.accordion-first-element-header-contracted:hover
+{
+    background-color: lighten($background-color, 6%);
+    color: $font-hover-color;
+    fill: $font-hover-color;
+}
+
+.accordion-first-element-header-contracted:active
+{
+    background-color: lighten($background-color, 9%);
+    color: $font-active-color;
+    fill: $font-active-color;
+}
+
+.accordion-element-header
 {
     height: fit-content;
     border-top: 1px solid lighten($background-color, 12%);
@@ -115,16 +152,127 @@ $background-color: $dark-theme-d00;
     background-color: lighten($background-color, 3%);
     color: $font-default-color;
     fill: $font-default-color;
+    cursor: pointer;
 }
 
-.accordion-header:hover
+.accordion-element-header-contracted
+{
+    height: fit-content;
+    border-top: 1px solid lighten($background-color, 12%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.75rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    box-sizing: border-box;
+    background-color: lighten($background-color, 3%);
+    color: $font-default-color;
+    fill: $font-default-color;
+    cursor: pointer;
+}
+
+.accordion-element-header:hover
 {
     background-color: lighten($background-color, 6%);
     color: $font-hover-color;
     fill: $font-hover-color;
 }
 
-.accordion-header:active
+.accordion-element-header-contracted:active
+{
+    background-color: lighten($background-color, 9%);
+    color: $font-active-color;
+    fill: $font-active-color;
+}
+
+.accordion-element-header-contracted:hover
+{
+    background-color: lighten($background-color, 6%);
+    color: $font-hover-color;
+    fill: $font-hover-color;
+}
+
+.accordion-element-header:active
+{
+    background-color: lighten($background-color, 9%);
+    color: $font-active-color;
+    fill: $font-active-color;
+}
+
+.accordion-last-element-header
+{
+    height: fit-content;
+    border-top: 1px solid lighten($background-color, 12%);
+    border-bottom: 1px solid lighten($background-color, 12%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.75rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    box-sizing: border-box;
+    background-color: lighten($background-color, 3%);
+    color: $font-default-color;
+    fill: $font-default-color;
+    cursor: pointer;
+}
+
+.accordion-last-element-header-contracted
+{
+    height: fit-content;
+    border-top: 1px solid lighten($background-color, 12%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.75rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-radius: 0 0 0.375rem 0.375rem;
+    box-sizing: border-box;
+    background-color: lighten($background-color, 3%);
+    color: $font-default-color;
+    fill: $font-default-color;
+    cursor: pointer;
+}
+
+.accordion-last-element-header:hover
+{
+    background-color: lighten($background-color, 6%);
+    color: $font-hover-color;
+    fill: $font-hover-color;
+}
+
+.accordion-last-element-header:active
+{
+    background-color: lighten($background-color, 9%);
+    color: $font-active-color;
+    fill: $font-active-color;
+}
+
+.accordion-last-element-header-contracted:hover
+{
+    background-color: lighten($background-color, 6%);
+    color: $font-hover-color;
+    fill: $font-hover-color;
+}
+
+.accordion-last-element-header-contracted:active
 {
     background-color: lighten($background-color, 9%);
     color: $font-active-color;
@@ -265,7 +413,7 @@ $background-color: $dark-theme-d00;
     }
 }
 
-.accordion-content-expanding-last
+.accordion-content-last-expanding
 {
     animation: expandingHeight 0.5s ease-out;
     width: 100%;
@@ -275,7 +423,7 @@ $background-color: $dark-theme-d00;
     line-height: 1.25rem;
 }
 
-.accordion-content-contracting-last
+.accordion-content-last-contracting
 {
     animation: contractingHeight 0.5s ease-out;
     width: 100%;

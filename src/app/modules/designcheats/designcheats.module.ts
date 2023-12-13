@@ -49,6 +49,15 @@ import { Breadcrumb1Component } from './breadcrumbs/breadcrumb-1/breadcrumb-1.co
 import { Breadcrumb2Component } from './breadcrumbs/breadcrumb-2/breadcrumb-2.component';
 import { AccordionsComponent } from './accordions/accordions.component';
 import { Accordion1Component } from './accordions/accordion-1/accordion-1.component';
+import { AlertsComponent } from './alerts/alerts.component';
+import { Alert1Component } from './alerts/alert-1/alert-1.component';
+import { Alert2Component } from './alerts/alert-2/alert-2.component';
+import { Alert3Component } from './alerts/alert-3/alert-3.component';
+import { Alert4Component } from './alerts/alert-4/alert-4.component';
+import { AlertLink1Component } from './alerts/alert-link-1/alert-link-1.component';
+import { AlertLink2Component } from './alerts/alert-link-2/alert-link-2.component';
+import { AlertLink3Component } from './alerts/alert-link-3/alert-link-3.component';
+import { AlertLink4Component } from './alerts/alert-link-4/alert-link-4.component';
 
 
 @NgModule({
@@ -94,7 +103,16 @@ import { Accordion1Component } from './accordions/accordion-1/accordion-1.compon
     Breadcrumb1Component,
     Breadcrumb2Component,
     AccordionsComponent,
-    Accordion1Component
+    Accordion1Component,
+    AlertsComponent,
+    Alert1Component,
+    Alert2Component,
+    Alert3Component,
+    Alert4Component,
+    AlertLink1Component,
+    AlertLink2Component,
+    AlertLink3Component,
+    AlertLink4Component
   ],
   imports: [
     CommonModule,

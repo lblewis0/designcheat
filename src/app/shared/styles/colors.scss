@@ -22,5 +22,15 @@ $font-default-color: rgba(white, 0.8);
 $font-hover-color: rgba(white, 0.9);
 $font-active-color: rgba(white, 1);
 
-$font-fam: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-default-blue-color: rgb(5,152,195);
+$primary-blue-background: rgba($font-default-blue-color, 0.2);
+
+$font-default-red-color: rgb(230,76,72);
+$primary-red-background: rgba($font-default-red-color, 0.2);
+
+$font-default-green-color: rgb(5,201,119);
+$primary-green-background: rgba($font-default-green-color, 0.2);
+
+$font-default-yellow-color: rgb(243,137,9);
+$primary-yellow-background: rgba($font-default-yellow-color, 0.2);
 

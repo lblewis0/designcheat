@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Table3Component } from './table-3.component';
+import { AlertIcon3Component } from './alert-icon-3.component';
 
-describe('Table3Component', () => {
-  let component: Table3Component;
-  let fixture: ComponentFixture<Table3Component>;
+describe('AlertIcon3Component', () => {
+  let component: AlertIcon3Component;
+  let fixture: ComponentFixture<AlertIcon3Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [Table3Component]
+      declarations: [AlertIcon3Component]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(Table3Component);
+    fixture = TestBed.createComponent(AlertIcon3Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

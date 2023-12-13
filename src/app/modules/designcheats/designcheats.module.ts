@@ -40,7 +40,6 @@ import { Input8Component } from './inputs/input-8/input-8.component';
 import { Input9Component } from './inputs/input-9/input-9.component';
 import { TablesComponent } from './tables/tables.component';
 import { Table2Component } from './tables/table-2/table-2.component';
-import { Table3Component } from './tables/table-3/table-3.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { Pagination1Component } from './pagination/pagination-1/pagination-1.component';
 import { Pagination2Component } from './pagination/pagination-2/pagination-2.component';
@@ -58,6 +57,10 @@ import { AlertLink1Component } from './alerts/alert-link-1/alert-link-1.componen
 import { AlertLink2Component } from './alerts/alert-link-2/alert-link-2.component';
 import { AlertLink3Component } from './alerts/alert-link-3/alert-link-3.component';
 import { AlertLink4Component } from './alerts/alert-link-4/alert-link-4.component';
+import { AlertIcon1Component } from './alerts/alert-icon-1/alert-icon-1.component';
+import { AlertIcon2Component } from './alerts/alert-icon-2/alert-icon-2.component';
+import { AlertIcon3Component } from './alerts/alert-icon-3/alert-icon-3.component';
+import { AlertIcon4Component } from './alerts/alert-icon-4/alert-icon-4.component';
 
 
 @NgModule({
@@ -95,7 +98,6 @@ import { AlertLink4Component } from './alerts/alert-link-4/alert-link-4.componen
     Input9Component,
     TablesComponent,
     Table2Component,
-    Table3Component,
     PaginationComponent,
     Pagination1Component,
     Pagination2Component,
@@ -112,7 +114,11 @@ import { AlertLink4Component } from './alerts/alert-link-4/alert-link-4.componen
     AlertLink1Component,
     AlertLink2Component,
     AlertLink3Component,
-    AlertLink4Component
+    AlertLink4Component,
+    AlertIcon1Component,
+    AlertIcon2Component,
+    AlertIcon3Component,
+    AlertIcon4Component
   ],
   imports: [
     CommonModule,

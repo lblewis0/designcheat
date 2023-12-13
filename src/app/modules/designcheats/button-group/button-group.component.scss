@@ -6,12 +6,12 @@ $background-color: $dark-theme-d00;
 {
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    height: fit-content;
+    min-height: 100%;
     background-color: $background-color;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
     padding-top: 1rem;
     padding-bottom: 1rem;
     gap: 1rem;
@@ -43,7 +43,7 @@ $background-color: $dark-theme-d00;
 
 label
 {
-    color: $font-active-color;
+    color: $font-default-color;
     font-size: 1.2rem;
 }
 

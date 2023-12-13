@@ -1,21 +1,6 @@
 @import '../../../shared/styles/colors.scss';
 
 $background-color: $dark-theme-d00;
-$background-color-2: $dark-theme-l03;
-$background-color-3: $dark-theme-l06;
-$background-color-4: $dark-theme-l09;
-$background-color-5: $dark-theme-l12;
-$background-color-6: $dark-theme-l15;
-$background-color-7: $dark-theme-l18;
-$background-color-8: $dark-theme-l21;
-$background-color-9: $dark-theme-l24;
-$background-color-10: $dark-theme-l27;
-$background-color-11: $dark-theme-l30;
-$background-color-12: $dark-theme-l33;
-$background-color-13: $dark-theme-l36;
-$background-color-14: $dark-theme-l39;
-$background-color-15: $dark-theme-l42;
-$background-color-16: $dark-theme-l45;
 
 .c-main-div
 {
@@ -30,6 +15,7 @@ $background-color-16: $dark-theme-l45;
     padding-top: 1rem;
     padding-bottom: 1rem;
     gap: 1rem;
+    overflow-y: hidden;
 }
 
 .c-example-div
@@ -58,7 +44,7 @@ $background-color-16: $dark-theme-l45;
 
 label
 {
-    color: $font-active-color;
+    color: $font-default-color;
     font-size: 1.2rem;
 }
 

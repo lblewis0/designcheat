@@ -12,6 +12,8 @@ import { PaginationComponent } from './pagination/pagination.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { AccordionsComponent } from './accordions/accordions.component';
 import { AlertsComponent } from './alerts/alerts.component';
+import { BadgesComponent } from './badges/badges.component';
+import { DropdownsComponent } from './dropdowns/dropdowns.component';
 
 const routes: Routes = [
   {path: "navbars", component: NavbarsComponent},
@@ -25,7 +27,9 @@ const routes: Routes = [
   {path: "paginations", component: PaginationComponent},
   {path: "breadcrumbs", component: BreadcrumbsComponent},
   {path: "accordions", component: AccordionsComponent},
-  {path: "alerts", component: AlertsComponent}
+  {path: "alerts", component: AlertsComponent},
+  {path: "badges", component: BadgesComponent},
+  {path: "dropdowns", component: DropdownsComponent}
 ];
 
 @NgModule({

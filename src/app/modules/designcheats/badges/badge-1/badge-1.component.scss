@@ -1,0 +1,25 @@
+@import '../../../../shared/styles/colors.scss';
+
+$background-color: $dark-theme-d00;
+
+.badge-blue
+{
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid $font-default-blue-color;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $font-default-blue-color;
+    background-color: $primary-blue-background;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    box-sizing: border-box;
+}
+

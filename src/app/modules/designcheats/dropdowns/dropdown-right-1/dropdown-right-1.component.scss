@@ -1,0 +1,266 @@
+@import '../../../../shared/styles/colors.scss';
+
+$background-color: $dark-theme-d00;
+
+.c-main-div
+{
+    border: 1px solid lighten($background-color, 12%);
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 80%;
+    padding-top: 0.5rem;
+    padding-bottom: 18.2rem;
+    box-sizing: border-box;
+
+}
+
+.button-dropdown
+{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    color: $font-default-color;
+    fill: $font-default-color;
+    border-radius: 0.375rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    background-color: lighten($background-color, 9%);
+    position: relative;
+}
+
+.button-dropdown-label
+{
+    line-height: 1.25rem;
+    font-size: 0.875rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 0.375rem 0 0 0.375rem;
+    cursor: pointer;
+}
+
+.button-dropdown-label:hover
+{
+    color: $font-hover-color;
+    background-color: lighten($background-color, 12%);
+}
+
+.button-dropdown-label:active
+{
+    color: $font-active-color;
+    background-color: lighten($background-color, 15%);
+}
+
+.button-dropdown-separator
+{
+    height: 1.5rem;
+    width: 1px;
+    background-color: darken($font-default-color, 50%);
+    display: flex;
+}
+
+.button-dropdown-icon-div
+{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 0 0.375rem 0.375rem 0;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-dropdown-icon-div:hover
+{
+    fill: $font-hover-color;
+    background-color: lighten($background-color, 12%);
+}
+
+.button-dropdown-icon-div:active
+{
+    fill: $font-active-color;
+    background-color: lighten($background-color, 15%);
+}
+
+.button-dropdown-icon
+{
+    box-sizing: border-box;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.dropdown-menu
+{
+    height: fit-content;
+    width: 9rem;
+    border-radius: 0.375rem;
+    border: 1px solid lighten($background-color, 12%);
+    position: absolute;
+    top: 0rem;
+    left: calc(100% + 0.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    padding-left: 0rem;
+    box-sizing: border-box;
+    background-color: darken($background-color, 3%);
+}
+
+@keyframes expanding {
+    from {
+        width: 0rem;
+        height: 0rem;
+    }
+    to {
+        width: 9rem;
+        height: fit-content;
+    }
+}
+
+.dropdown-menu-expanding
+{
+    animation: expanding 0.5s ease-out;
+    border-radius: 0.375rem;
+    border: 1px solid lighten($background-color, 12%);
+    position: absolute;
+    top: 0rem;
+    left: calc(100% + 0.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    padding-left: 0rem;
+    box-sizing: border-box;
+    background-color: darken($background-color, 3%);
+}
+
+@keyframes contracting {
+    from {
+        width: 9rem;
+        height: fit-content;
+    }
+    to {
+        width: 0rem;
+        height: 0rem;
+    }
+}
+
+.dropdown-menu-contracting
+{
+    animation: contracting 0.5s ease-out;
+    border-radius: 0.375rem;
+    border: 1px solid lighten($background-color, 12%);
+    position: absolute;
+    top: 0rem;
+    left: calc(100% + 0.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    padding-left: 0rem;
+    box-sizing: border-box;
+    background-color: darken($background-color, 3%);
+}
+
+.dropdown-menu-family-first
+{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    border-bottom: 1px solid lighten($background-color, 12%);
+    border-radius: 0.375rem 0.375rem 0 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+}
+
+.dropdown-menu-family
+{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    border-bottom: 1px solid lighten($background-color, 12%);
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+}
+
+.dropdown-menu-family-last
+{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    border-radius: 0 0 0.375rem 0.375rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+}
+
+.dropdown-menu-element
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dropdown-menu-element:hover
+{
+    background-color: $background-color;
+    color: $font-hover-color;
+}
+
+.dropdown-menu-element:active
+{
+    background-color: lighten($background-color, 3%);
+    color: $font-active-color;
+}
+

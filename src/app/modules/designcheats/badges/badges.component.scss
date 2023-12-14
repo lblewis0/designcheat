@@ -1,0 +1,77 @@
+@import '../../../shared/styles/colors.scss';
+
+$background-color: $dark-theme-d00;
+
+.c-main-div
+{
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    min-height: 100%;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+}
+
+.c-example-div
+{
+    width: 80%;
+    height: fit-content;
+    border: 1px solid $dark-theme-l12;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    
+}
+
+.c-example-title-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+label
+{
+    color: $font-default-color;
+    font-size: 1.2rem;
+}
+
+.false-window
+{
+    width: 100%;
+    height: fit-content;
+    border: 1px solid $dark-theme-l12;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.badge
+{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+

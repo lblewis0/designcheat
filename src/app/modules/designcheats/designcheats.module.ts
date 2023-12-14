@@ -61,6 +61,16 @@ import { AlertIcon1Component } from './alerts/alert-icon-1/alert-icon-1.componen
 import { AlertIcon2Component } from './alerts/alert-icon-2/alert-icon-2.component';
 import { AlertIcon3Component } from './alerts/alert-icon-3/alert-icon-3.component';
 import { AlertIcon4Component } from './alerts/alert-icon-4/alert-icon-4.component';
+import { ButtonClose1Component } from './buttons/button-close/button-close-1/button-close-1.component';
+import { IconButton1Component } from './buttons/icons/icon-button-1/icon-button-1.component';
+import { BadgesComponent } from './badges/badges.component';
+import { Badge1Component } from './badges/badge-1/badge-1.component';
+import { Badge2Component } from './badges/badge-2/badge-2.component';
+import { Badge3Component } from './badges/badge-3/badge-3.component';
+import { Badge4Component } from './badges/badge-4/badge-4.component';
+import { ButtonDropdown1Component } from './buttons/button-dropdown/button-dropdown-1/button-dropdown-1.component';
+import { DropdownsComponent } from './dropdowns/dropdowns.component';
+import { DropdownRight1Component } from './dropdowns/dropdown-right-1/dropdown-right-1.component';
 
 
 @NgModule({
@@ -118,7 +128,17 @@ import { AlertIcon4Component } from './alerts/alert-icon-4/alert-icon-4.componen
     AlertIcon1Component,
     AlertIcon2Component,
     AlertIcon3Component,
-    AlertIcon4Component
+    AlertIcon4Component,
+    ButtonClose1Component,
+    IconButton1Component,
+    BadgesComponent,
+    Badge1Component,
+    Badge2Component,
+    Badge3Component,
+    Badge4Component,
+    ButtonDropdown1Component,
+    DropdownsComponent,
+    DropdownRight1Component
   ],
   imports: [
     CommonModule,

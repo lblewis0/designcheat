@@ -1,0 +1,30 @@
+<div class="c-main-div">
+    <button class="button-dropdown">
+        <label class="button-dropdown-label">Default</label>
+        <div class="button-dropdown-separator"></div>
+        <div class="button-dropdown-icon-div" (click)="onClick()">
+            <svg class="button-dropdown-icon" 
+                 xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 -960 960 960" >
+                 <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
+            </svg>
+        </div>
+        <div *ngIf="isExpanded" [ngClass]="getClass()">
+            <div class="dropdown-menu-family-first">
+                <div class="dropdown-menu-element">dropdown 1</div>
+                <div class="dropdown-menu-element">dropdown 2</div>
+                <div class="dropdown-menu-element">dropdown 3</div>
+            </div>
+            <div class="dropdown-menu-family">
+                <div class="dropdown-menu-element">dropdown 4</div>
+                <div class="dropdown-menu-element">dropdown 5</div>
+                <div class="dropdown-menu-element">dropdown 6</div>
+            </div>
+            <div class="dropdown-menu-family-last">
+                <div class="dropdown-menu-element">dropdown 7</div>
+                <div class="dropdown-menu-element">dropdown 8</div>
+                <div class="dropdown-menu-element">dropdown 9</div>
+            </div>
+        </div>
+    </button>
+</div>

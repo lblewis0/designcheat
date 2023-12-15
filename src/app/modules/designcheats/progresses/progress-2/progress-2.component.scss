@@ -1,0 +1,73 @@
+@import '../../../../shared/styles/colors.scss';
+
+$background-color: $dark-theme-d00;
+
+.progress-bar
+{
+    padding: 0.1rem;
+    height: 2.125rem;
+    width: 45rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: darken($background-color, 6%);
+    border: 1px solid lighten($background-color, 12%);
+    border-radius: 0.5rem;
+    position: relative;
+
+}
+
+.progress-bar-value-label
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    color: $font-active-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+
+.progress-bar-thumb
+{
+    height: 90%;
+    border: none;
+    box-sizing: border-box;
+    width: 40%;
+    background-color: darken($font-default-green-color, 12%);
+    border-radius: 0.4rem;
+    position: absolute;
+}
+
+@keyframes infiniteBluring {
+
+    0%{
+        transform: translateX(0%);
+        left: 0%;
+    }
+    50%{
+        transform: translate(-100%);
+        left: 100%
+    }
+    100%{
+        transform: translate(0%);
+        left: 0%;
+    }
+
+}
+
+.progress-bar-thumb-blur
+{
+    height: 90%;
+    width: 40px;
+    position: absolute;
+    top: 5%;
+    animation: infiniteBluring 5s ease-in-out infinite;
+    background: linear-gradient(100deg, rgba($font-default-green-color, 0), rgba($font-default-green-color, 0.3), rgba($font-default-green-color, 0));
+}
+

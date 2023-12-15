@@ -6,7 +6,7 @@
             <svg class="button-dropdown-icon" 
                  xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 -960 960 960" >
-                 <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
+                 <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
             </svg>
         </div>
         <div *ngIf="isExpanded" class="dropdown-menu">
@@ -31,7 +31,7 @@
                          viewBox="0 -960 960 960" >
                         <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
                     </svg>
-                    <div *ngIf="childs[0].isExpanded" class="dropdown-menu-first">
+                    <div *ngIf="childs[0].isExpanded" class="dropdown-menu-first-2">
                         <div class="dropdown-menu-family-only">
                             <div class="dropdown-menu-element">
                                 <label class="drowdown-menu-element-label">Drowndown 1</label>
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="dropdown-menu-element"  
+                <div class="dropdown-menu-element" 
                      (click)="onClickChild(1)"
                      (mouseover)="onHover(1)">
                     <label class="drowdown-menu-element-label">Drowndown arrow 2</label>
@@ -54,7 +54,7 @@
                          viewBox="0 -960 960 960" >
                         <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
                     </svg>
-                    <div *ngIf="childs[1].isExpanded" class="dropdown-menu-first">
+                    <div *ngIf="childs[1].isExpanded" class="dropdown-menu-first-2">
                         <div class="dropdown-menu-family-only">
                             <div class="dropdown-menu-element">
                                 <label class="drowdown-menu-element-label">Drowndown 1</label>
@@ -77,7 +77,7 @@
                          viewBox="0 -960 960 960" >
                         <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
                     </svg>
-                    <div *ngIf="childs[2].isExpanded" class="dropdown-menu-first">
+                    <div *ngIf="childs[2].isExpanded" class="dropdown-menu-first-2">
                         <div class="dropdown-menu-family-only">
                             <div class="dropdown-menu-element">
                                 <label class="drowdown-menu-element-label">Drowndown 1</label>

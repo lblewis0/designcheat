@@ -1,0 +1,8 @@
+
+<div class="progress-bar">
+    <!-- [style.width]="widthValue" -->
+    <div class="progress-bar-thumb">
+        <div *ngIf="progressValue > 15" class="progress-bar-thumb-blur"></div>
+    </div>
+    <label class="progress-bar-value-label">{{progressValue}}%</label>
+</div>

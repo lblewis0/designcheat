@@ -71,6 +71,17 @@ import { Badge4Component } from './badges/badge-4/badge-4.component';
 import { ButtonDropdown1Component } from './buttons/button-dropdown/button-dropdown-1/button-dropdown-1.component';
 import { DropdownsComponent } from './dropdowns/dropdowns.component';
 import { DropdownRight1Component } from './dropdowns/dropdown-right-1/dropdown-right-1.component';
+import { DropdownDown1Component } from './dropdowns/dropdown-down-1/dropdown-down-1.component';
+import { DropdownRight2Component } from './dropdowns/dropdown-right-2/dropdown-right-2.component';
+import { DropdownDown2Component } from './dropdowns/dropdown-down-2/dropdown-down-2.component';
+import { Pagination3Component } from './pagination/pagination-3/pagination-3.component';
+import { ProgressesComponent } from './progresses/progresses.component';
+import { Progress1Component } from './progresses/progress-1/progress-1.component';
+import { Progress2Component } from './progresses/progress-2/progress-2.component';
+import { SpinnersComponent } from './spinners/spinners.component';
+import { Spiner1Component } from './spinners/spiner-1/spiner-1.component';
+import { Spiner2Component } from './spinners/spiner-2/spiner-2.component';
+import { ToggleButton1Component } from './buttons/toggle-button/toggle-button-1/toggle-button-1.component';
 
 
 @NgModule({
@@ -138,7 +149,18 @@ import { DropdownRight1Component } from './dropdowns/dropdown-right-1/dropdown-r
     Badge4Component,
     ButtonDropdown1Component,
     DropdownsComponent,
-    DropdownRight1Component
+    DropdownRight1Component,
+    DropdownDown1Component,
+    DropdownRight2Component,
+    DropdownDown2Component,
+    Pagination3Component,
+    ProgressesComponent,
+    Progress1Component,
+    Progress2Component,
+    SpinnersComponent,
+    Spiner1Component,
+    Spiner2Component,
+    ToggleButton1Component
   ],
   imports: [
     CommonModule,

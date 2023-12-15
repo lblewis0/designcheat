@@ -222,7 +222,7 @@ $background-color: $dark-theme-d00;
     fill: $font-hover-color;
 }
 
-.pagination-next-button-icon:active
+.pagination-next-button-con:active
 {
     background-color: lighten($background-color, 15%);
     color: $font-active-color;

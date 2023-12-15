@@ -1,0 +1,27 @@
+<div class="c-main-div">
+    <div class="left-div">
+        <label class="component-label">Pagination with only previous and next icons [0-5, {{selectPage}}]</label>
+    </div>
+    <div class="right-div">
+        <div class="pagination-div">
+            <button [ngClass]="{'pagination-previous-button-icon': selectPage !== 1,
+                                'pagination-previous-button-icon-disabled': selectPage === 1}"
+                    (click)="onPreviousClick()">
+                    <svg class="pagination-previous-button-icon-icon" 
+                         xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 -960 960 960" >
+                        <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/>
+                    </svg>
+            </button>
+            <button [ngClass]="{'pagination-next-button-icon': selectPage !== paginations.length,
+                                'pagination-next-button-icon-disabled': selectPage === paginations.length}"
+                    (click)="onNextClick()">
+                    <svg class="pagination-next-button-icon-icon" 
+                         xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 -960 960 960" >
+                        <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
+                    </svg>
+            </button>
+        </div>
+    </div>
+</div>

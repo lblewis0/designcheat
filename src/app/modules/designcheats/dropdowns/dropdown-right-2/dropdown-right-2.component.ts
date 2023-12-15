@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-dropdown-right-1',
-  templateUrl: './dropdown-right-1.component.html',
-  styleUrl: './dropdown-right-1.component.scss'
+  selector: 'app-dropdown-right-2',
+  templateUrl: './dropdown-right-2.component.html',
+  styleUrl: './dropdown-right-2.component.scss'
 })
-export class DropdownRight1Component {
+export class DropdownRight2Component {
 
   isExpanded: boolean = true;
 

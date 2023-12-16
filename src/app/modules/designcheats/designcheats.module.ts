@@ -82,6 +82,12 @@ import { SpinnersComponent } from './spinners/spinners.component';
 import { Spiner1Component } from './spinners/spiner-1/spiner-1.component';
 import { Spiner2Component } from './spinners/spiner-2/spiner-2.component';
 import { ToggleButton1Component } from './buttons/toggle-button/toggle-button-1/toggle-button-1.component';
+import { Spiner3Component } from './spinners/spiner-3/spiner-3.component';
+import { TabulationsComponent } from './tabulations/tabulations.component';
+import { Tabulation1Component } from './tabulations/tabulation-1/tabulation-1.component';
+import { Tabulation2Component } from './tabulations/tabulation-2/tabulation-2.component';
+import { Tabulation3Component } from './tabulations/tabulation-3/tabulation-3.component';
+import { Tabulation4Component } from './tabulations/tabulation-4/tabulation-4.component';
 
 
 @NgModule({
@@ -160,7 +166,13 @@ import { ToggleButton1Component } from './buttons/toggle-button/toggle-button-1/
     SpinnersComponent,
     Spiner1Component,
     Spiner2Component,
-    ToggleButton1Component
+    ToggleButton1Component,
+    Spiner3Component,
+    TabulationsComponent,
+    Tabulation1Component,
+    Tabulation2Component,
+    Tabulation3Component,
+    Tabulation4Component
   ],
   imports: [
     CommonModule,

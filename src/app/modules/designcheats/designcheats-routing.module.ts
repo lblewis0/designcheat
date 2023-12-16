@@ -16,6 +16,7 @@ import { BadgesComponent } from './badges/badges.component';
 import { DropdownsComponent } from './dropdowns/dropdowns.component';
 import { ProgressesComponent } from './progresses/progresses.component';
 import { SpinnersComponent } from './spinners/spinners.component';
+import { TabulationsComponent } from './tabulations/tabulations.component';
 
 const routes: Routes = [
   {path: "navbars", component: NavbarsComponent},
@@ -33,7 +34,8 @@ const routes: Routes = [
   {path: "badges", component: BadgesComponent},
   {path: "dropdowns", component: DropdownsComponent},
   {path: "progresses", component: ProgressesComponent},
-  {path: "spinners", component: SpinnersComponent}
+  {path: "spinners", component: SpinnersComponent},
+  {path: "tabulations", component: TabulationsComponent}
 ];
 
 @NgModule({

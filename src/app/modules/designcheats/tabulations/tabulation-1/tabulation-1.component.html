@@ -1,0 +1,38 @@
+<div class="c-main-div">
+    <div class="tabulation-div">
+        <div class="tabulation-header-div">
+            <div [ngClass]="tabs.Tabs[0].isSelected ? 'tabulation-header-item-selected' : 'tabulation-header-item'" (click)="onClickTab(0)">
+                <div class="tabulation-header-item-label">Tabulation 1</div>
+                <div *ngIf="tabs.Tabs[0].isSelected" class="tabulation-header-item-blur"></div>
+                <div *ngIf="tabs.Tabs[0].isSelected"class="right-round">
+                    <div class="right-round-child"></div>
+                </div>
+            </div>
+            <div [ngClass]="tabs.Tabs[1].isSelected ? 'tabulation-header-item-selected' : 'tabulation-header-item'" (click)="onClickTab(1)">
+                <div class="tabulation-header-item-label">Tabulation 2</div>
+                <div *ngIf="tabs.Tabs[1].isSelected" class="tabulation-header-item-blur"></div>
+                <div *ngIf="tabs.Tabs[1].isSelected"class="left-round">
+                    <div class="left-round-child"></div>
+                </div>
+                <div *ngIf="tabs.Tabs[1].isSelected"class="right-round">
+                    <div class="right-round-child"></div>
+                </div>
+            </div>
+            <div [ngClass]="tabs.Tabs[2].isSelected ? 'tabulation-header-item-selected' : 'tabulation-header-item'" (click)="onClickTab(2)">
+                <div class="tabulation-header-item-label">Tabulation 3</div>
+                <div *ngIf="tabs.Tabs[2].isSelected" class="tabulation-header-item-blur"></div>
+                <div *ngIf="tabs.Tabs[2].isSelected"class="left-round">
+                    <div class="left-round-child"></div>
+                </div>
+                <div *ngIf="tabs.Tabs[2].isSelected"class="right-round">
+                    <div class="left-round-child"></div>
+                </div>
+            </div>
+        </div>
+        <div class="tabulation-content-div">
+            <div class="tabulation-active-content-div">
+                <div class="content-div-example"></div>
+            </div>
+        </div>
+    </div>
+</div>

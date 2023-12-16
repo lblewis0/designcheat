@@ -1,0 +1,44 @@
+@import '../../../../shared/styles/colors.scss';
+
+$background-color: $dark-theme-d00;
+
+.c-main-div
+{
+    width: 50%;
+    height: 3.215rem;
+    border: 1px solid lighten($background-color, 12%);
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+@keyframes growing {
+    0% {
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: rgba($font-default-green-color, 0.1);
+    }
+    50% {
+        width: 2.215rem;
+        height: 2.215rem;
+        background-color: rgba($font-default-green-color, 1);
+    }
+    100% {
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: rgba($font-default-green-color, 0.1);
+    }
+}
+
+.grower
+{
+    box-sizing: border-box;
+    border-radius: 50%;
+    animation: growing 1.5s ease infinite;
+}
+

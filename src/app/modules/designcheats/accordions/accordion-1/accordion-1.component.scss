@@ -366,7 +366,7 @@ $background-color: $dark-theme-d00;
 
 .accordion-content-expanding
 {
-    animation: expandingHeight 0.5s ease-out;
+    // animation: expandingHeight 0.5s ease-out;
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
@@ -374,14 +374,24 @@ $background-color: $dark-theme-d00;
     line-height: 1.25rem;
 }
 
+.accordion-content-expanding::after
+{
+    animation: expandingHeight 0.5s ease-out;
+}
+
 .accordion-content-contracting
 {
-    animation: contractingHeight 0.5s ease-out;
+    // animation: contractingHeight 0.5s ease-out;
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
     font-size: 0.875rem;
     line-height: 1.25rem;
+}
+
+.accordion-content-contracting::after
+{
+    animation: contractingHeight 0.5s ease-out;
 }
 
 .accordion-content-last
@@ -415,7 +425,7 @@ $background-color: $dark-theme-d00;
 
 .accordion-content-last-expanding
 {
-    animation: expandingHeight 0.5s ease-out;
+    // animation: expandingHeight 0.5s ease-out;
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
@@ -423,12 +433,22 @@ $background-color: $dark-theme-d00;
     line-height: 1.25rem;
 }
 
+.accordion-content-last-expanding::after
+{
+    animation: expandingHeight 0.5s ease-out;
+}
+
 .accordion-content-last-contracting
 {
-    animation: contractingHeight 0.5s ease-out;
+    // animation: contractingHeight 0.5s ease-out;
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
     font-size: 0.875rem;
     line-height: 1.25rem;
+}
+
+.accordion-content-last-contracting::after
+{
+    animation: contractingHeight 0.5s ease-out;
 }

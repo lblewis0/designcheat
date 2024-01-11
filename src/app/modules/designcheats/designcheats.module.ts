@@ -88,6 +88,7 @@ import { Tabulation1Component } from './tabulations/tabulation-1/tabulation-1.co
 import { Tabulation2Component } from './tabulations/tabulation-2/tabulation-2.component';
 import { Tabulation3Component } from './tabulations/tabulation-3/tabulation-3.component';
 import { Tabulation4Component } from './tabulations/tabulation-4/tabulation-4.component';
+import { RouterOutlet } from '@angular/router';
 
 
 @NgModule({
@@ -180,7 +181,8 @@ import { Tabulation4Component } from './tabulations/tabulation-4/tabulation-4.co
     DesigncheatsRoutingModule,
     NavbarsModule,
     SidebarsModule,
-    MonacoEditorModule
+    MonacoEditorModule,
+    RouterOutlet
   ]
 })
 export class DesigncheatsModule { }
